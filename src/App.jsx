@@ -1,3 +1,5 @@
+
+=======
 /* eslint-disable no-unused-vars */
 import React, { Suspense, useCallback, useEffect, useMemo, useState } from "react";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
@@ -22,13 +24,6 @@ const Home = React.lazy(() => loadHome());
 const Topbar = React.lazy(() => loadNav());
 const Navbar = React.lazy(() => loadTopbar());
 const Login = React.lazy(() => loadLogin());
-
-
-
-
-
-
-
 
 
 
@@ -67,6 +62,7 @@ function App() {
     // }
   };
   return (
+
     <div>
       <Suspense fallback={<div>Loading...</div>}>
           {" "}
@@ -87,5 +83,34 @@ function App() {
     </div>
   );
 }
+const StyledDiv = styled.div`
+  padding: 0 20px;
+  background-color: #fafafa;
+  display: flex;
+  padding-bottom: 39px;
+  flex-direction: column;
+  @media (max-width: 991px) {
+    padding: 0;
+  }
+`;
+
+const Div = styled.h2`
+  color: var(--red, #000);
+  font: 700 20px Inter, sans-serif;
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
+`;
+
+const Top = styled.h2`
+  color: var(--red, #000);
+  align-self: stretch;
+  margin-top: 37px;
+  white-space: nowrap;
+  font: 700 20px Inter, sans-serif;
+  @media (max-width: 991px) {
+    white-space: initial;
+  }
+`;
 
 export default App;
