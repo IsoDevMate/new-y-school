@@ -31,35 +31,37 @@ const cards1 =  Topcourses.map((item, index) => (
 
 
   return (
-   
-    <StyledDiv>
-    <Div>
-      Students are viewing
-    </Div>
-      <Carousel showDots={false} responsive={responsive}>
-        {cards}
-      </Carousel>
-      <Top>
-      Top courses in bussiness
-    </Top>
-      <Carousel showDots={false} responsive={responsive}>
-        {cards1}
-      </Carousel>
-      </StyledDiv> 
+   <div>
+    <h3 style={{padding:'1rem',paddingLeft:'3rem'}}>Students are viewing</h3>
+    <div className="course">
+          {cards}
+
+    </div>
+    <h3 style={{padding:'1rem',paddingLeft:'3rem'}}>Top courses in bussiness</h3>
+    <div className="course">
+          {cards}
+
+    </div>
+   </div>
+    // <StyledDiv>
+    // <Div style={{padding:'1rem'}}>
+    //   
+    // </Div>
+    //   {/* <Carousel showDots={false} responsive={responsive}> */}
+    //     {cards}
+    //   {/* </Carousel> */}
+    //   <Top>
+    //   
+    // </Top>
+    //   <Carousel showDots={false} responsive={responsive}>
+    //     {cards1}
+    //   </Carousel>
+    //   </StyledDiv> 
      
 
   );
 }
-const StyledDiv = styled.div`
-  padding: 0 20px;
-  background-color: #fafafa;
-  display: flex;
-  padding-bottom: 39px;
-  flex-direction: column;
-  @media (max-width: 991px) {
-    padding: 0;
-  }
-`;
+
 
 const Div = styled.h2`
   color: var(--red, #000);

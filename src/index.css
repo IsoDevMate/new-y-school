@@ -60,10 +60,38 @@
   margin: 0 ;
   padding: 0 ;
 }
-.categories{
+.categories {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  overflow-x: auto; 
+
+  scroll-snap-type: x mandatory;
+  white-space: nowrap; /* Prevents wrapping to the next line */
+}
+.couggrse{
+  width: 17rem;
+  height: 17rem !important;
+}
+.category {
+  /* margin-left: 5rem !important; */
+  margin: 1rem;
+  /* padding-left: 15rem; */
+  scroll-snap-align: start;
+  /* background-color:  #3b3763 !important; */
+height: 2rem;
+/* width: 11rem; */
+color: black !important;
+  /* Add other styling for your category items */
+}
+
+.course{
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 }

@@ -1,12 +1,16 @@
 /* eslint-disable no-unused-vars */
+import { Button } from '@mui/material'
 import React from 'react'
 
 const Categories = () => {
   return (
    <div className="categories">
-    <p>Business</p>
-    <p>IT & Developement</p>
-    <p>Marketing</p>
+    <Button className='category'>Business</Button>
+    <Button className='category'>IT & Developement</Button>
+    <Button className='category'>Marketing</Button>
+    <Button className='category'>Design</Button>
+    <Button className='category'>Finance and Accounting</Button>
+    <Button className='category'>Office productivity</Button>
    </div>
   )
 }

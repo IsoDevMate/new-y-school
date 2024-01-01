@@ -24,15 +24,16 @@ export const responsive = {
   export const CardsData = [
     {
       imageurl:
-      {ph},
-        title: "Complete 2023 Web Development Bootcamp",
-        name: "Prof James mwangi",
+      "https://res.cloudinary.com/pitz/image/upload/v1704120680/WhatsApp_Image_2024-01-01_at_17.49.02_1_ntgmai.jpg",
+        title: "Web Development",
+        name: "Prof James ",
       price:3000,
     },
    
        {
         imageurl:
-        {ph},
+        "https://res.cloudinary.com/pitz/image/upload/v1704120680/WhatsApp_Image_2024-01-01_at_17.49.02_1_ntgmai.jpg",
+        
          title: "ultimate react course",
          name: "Willis mwamburi",
          price:3000,
@@ -40,22 +41,25 @@ export const responsive = {
        },
        {
         imageurl:
-        "images.png",
+        "https://res.cloudinary.com/pitz/image/upload/v1704120680/WhatsApp_Image_2024-01-01_at_17.49.02_1_ntgmai.jpg",
+
          title: "PMP Certification exam course 35",
          name: "john kibe wangarii",
          price:20000,
        },
        {
         imageurl:
-        "images.png",
-         title: "Introduction to game localization<",
+        "https://res.cloudinary.com/pitz/image/upload/v1704120680/WhatsApp_Image_2024-01-01_at_17.49.02_1_ntgmai.jpg",
+
+         title: "Introduction to game localization",
            name: "Jack mahn",
          price:110000,
        },
        {
         imageurl:
-        "images.png",
-         title: "crash course Electronics and PCB design<",
+        "https://res.cloudinary.com/pitz/image/upload/v1704120680/WhatsApp_Image_2024-01-01_at_17.49.02_1_ntgmai.jpg",
+        
+         title: " Electronics and PCB design",
          name: "Jeff ayako",
          price:30000,
        },
