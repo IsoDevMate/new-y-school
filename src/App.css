@@ -1,0 +1,705 @@
+.ant-btn-primary {
+    background-color: #3fc060 !important;
+    border-color: #3fc060 !important;
+  }
+  
+  .ant-pagination-item-active {
+    border-color: #3fc060 !important;
+  }
+  
+  li.ant-pagination-item-active a {
+    color: #3fc060 !important;
+  }
+  
+  .ant-menu-item-selected {
+    background-color: #847abe !important;
+  }
+  
+  .ant-menu-item-selected span {
+    color: white !important;
+  }
+  
+  .ant-menu-item-active {
+    color: #827dac !important;
+  }
+  /* index.css or a new dark-theme.css */
+  .dark-theme {
+    background-color:white#000; /* Set background color to black */
+    color: black; /* Set text color to white */
+  }
+  .single{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+  }
+  .drawer{
+    /* background-color: blue !important; */
+  }
+  .video{
+    width: 28rem !important;
+    height: 10rem;
+  }
+  .pc-form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 5rem;
+    border: 0.01px solid black;
+  }
+  .text-wal{
+    display:flex;
+  }
+  .update-btn{
+    width: 10rem;
+    background-color: #3b3763 !important;
+    color: white !important;
+  }
+  @media only screen and (max-width: 600px) {
+    .text-wal{
+    display:none !important ;
+  }
+  .update-btn{
+   
+  }
+    .p{
+      margin-left: 7rem !important;
+    }
+    .sideIcon{
+      top:40rem !important;
+    }
+    .single{
+      padding: 0 !important;
+    }
+    .log-img{
+      display: none !important;
+    }
+    .forms-cards{
+      width: 1rem !important;
+    }
+    .icon{
+      color: #000 !important;
+    }
+    /* .video{
+      width: rem !important;
+    } */
+    .login-card{
+      background-color: #fff !important;
+    }
+  }
+  .logo{
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+  }
+  .login-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    
+   
+  }
+  .p{
+    margin-left: 13.4rem ;
+  }
+  .no-background {
+    background: none !important;
+  }
+  
+  
+  .login-btn{
+    background-color:#3b3763 !important ;
+    height: 2.5rem !important;
+  }
+  .input{
+    background-color: #fff !important;
+  }
+  .logo-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0rem;
+    padding-bottom: 1rem;
+  }
+  
+  .sideIcon{
+    position: fixed;
+    bottom:70px ;
+    
+    left: 20px;
+   z-index : 1;
+  }
+  /* Add more styles for specific elements if needed */
+  /* Custom CSS to make all buttons blue */
+  
+  .login-container{
+    background: rgb(131,58,180);
+  background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,97,1) 54%, rgba(252,69,205,1) 84%);
+  background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,97,1) 54%, rgba(252,69,205,1) 84%);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,97,1) 54%, rgba(252,69,205,1) 84%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fc45cd",GradientType=1);
+    /* background-color: #3fc060 !important; */
+    /* background-image: url('https://app.yafreeka.com/splash/img/light-1x.png'); */
+  }
+  
+  .wallet{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 2rem; */
+    padding-top: 4rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* position: relative; */
+  }
+  
+  .wallet-top{
+    background-color: gray;
+  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    /* flex-wrap: wrap;  */
+    border-radius: 1rem;
+  }
+  .card-single{
+    /* background-color: rgb(207, 205, 205) !important; */
+  }
+  .wallet-top-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 2rem; */
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card{
+    /* margin-top: 10rem; */
+    background-color: gray !important;
+  }
+  .forms{
+    display: flex;
+    width: 100% !important;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+  }
+  
+  .forms-cards{
+    width: 50rem !important;
+    /*  */
+    /* background-color: #e7e2e2; */
+  }
+  .video{
+    width: 100%;
+  }
+  .card-btns{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    margin-top: 1rem;
+  
+  }
+  
+  body{
+    padding:  0;
+    margin: 0;
+  }
+  
+  @media only screen and (max-width: 760px) {
+    .input{
+  width: 50% !important;
+    }
+    .help{
+      display: none !important;
+    }
+    .lap-card-bal{
+      width: 100% !important;
+      /* padding: 3rem; */
+    }
+  }
+  .lap-card-bal{
+    width: 29rem;
+    
+  }
+  .carde-over{
+    background-color: rgb(53, 53, 196);
+    color: #fff;
+  }
+  .drawawe{
+    border: none !important;
+    overflow-y: unset !important;
+  }
+  /* Add this to your CSS file */
+  .color-none{
+    background-color: #fff;
+    color: #000;
+  }
+  .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+  }
+  .icon{
+    color: blueviolet !important;
+  }
+  .main-app{
+    margin-left: 234px;
+    margin-bottom: 4rem !important;
+  }
+  .main-wall{
+  height: 85vh;
+    padding: .5rem;
+  }
+  .input-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    
+  }
+  .input-group input{
+  width: 90% ;
+  border: .3px solid black;
+  height: 2rem;
+  border-radius: 2.4px;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: .7rem;
+  }
+  .cvc{
+    width: 5rem !important;
+  }
+  .multi-input{
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: .1rem;
+  }
+  .text1{
+    color: #000 !important;
+    
+  }
+  .payment-det{
+    display: flex;
+  }
+  .help{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 60% !important;
+  }
+  .mombile-form{
+    display: none;
+  }
+  .text{
+    color: #ffffff;
+  }
+  
+  .choose {
+    overflow: hidden;
+  }
+  
+  .choose h2,
+  .text-card {
+    opacity: 0;
+    transform: translateX(-100%) !important;
+    transition: opacity 0.5s, transform 0.5s !important;
+  }
+  
+  .choose.creditCard h2,
+  .text-card {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+  }
+  
+  
+  .choose{
+    display: flex;
+    padding-left: 2rem;
+    border-radius: 1rem;
+    /* align-items: center;
+    justify-content: center; */
+    background-color: #fff;
+    color: #000;
+    flex-direction: column;
+  }
+  .small-screen-text{
+    display: none;
+  }
+  .card-bank-bg{
+    background-color: #fff !important;
+  }
+  
+  .test{
+    display: flex;
+  }
+  .problem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 3rem;
+    width: 100%;
+    height: 80vh;
+  }
+  .input-repo{
+    width: 27rem;
+  }
+  .ttt{
+    background-color: #f9f9fc !important;
+    padding: 1rem;
+  }
+  .card-forget{
+    width: 27rem;
+  }
+  .transa{
+    margin-top: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000 !important;
+    font-size: 1.5rem;
+  }
+  @media only screen and (max-width: 768px) {
+    /* Adjust the breakpoint as needed */
+    .card-forget{
+      width: 100% !important;
+    }
+    .payment-det{
+      display: none !important;
+    }
+    .ttt{
+      width: 100% !important;
+    }
+    .vud-card{
+    width: 17rem !important;
+    /* background-color: #3b3763 !important; */
+  }.input-repo{
+    width: 100% !important;
+  }
+    .mobile-menu-icon {
+      display: none;
+    }
+  .test{
+    display: none !important;
+  }
+    .help1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      width: 100% !important;
+    }
+    .small-screen-text{
+      display: flex !important;
+    }
+    .input-group input{
+      width: 90% ;
+      border: .3px solid black;
+      height: 2rem;
+      border-radius: 2.4px;
+      }
+  
+    .laptop-screen{
+      display: none;
+    }
+    .mombile-form{
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      color: #000;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      border-radius: 1rem;
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+    .main-app{
+      margin-left: 0px !important;
+    }
+    .cvc{
+      width: 6rem !important;
+    }
+    .main-wall{
+   
+        height: 120vh !important;
+         
+    }
+    .credit-card{
+      background-color: #fff !important;
+      width:100% !important;
+      height: 24rem !important;
+      display: none !important;
+    }
+    .credit-card3{
+      background-color: #f9f9fc !important;
+      width:100% !important;
+  color: white !important;
+      display: flex;
+    
+    height: 17rem ;
+    }
+    .credit-card1{
+      background-color: #fff !important;
+      width:67rem !important;
+      height: 28rem !important;
+      display: none !important;
+  
+  
+      /* height: 21rem !important; */
+    }
+    .credit-card12{
+      background-color: #fff !important;
+      width:67rem !important;
+      height: 28rem !important;
+  
+  
+      /* height: 21rem !important; */
+    }
+    .card-bank{
+      width: 100% !important ;
+    }
+    .card-bank1{
+      width: 17rem !important ;
+      position: absolute;
+      top: 36rem !important;
+      left: 0rem !important;
+      display: none !important;
+    }
+    .card-bank img{
+      width: 17rem !important;
+      display: none !important;
+    }
+    .card-bank1 img{
+      width: 17rem !important;
+    }
+    .button{
+      width: 90% !important;
+    }
+    .button1{
+      width: 90% !important;
+      
+    }
+  }
+  .css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+    overflow-y: hidden !important;
+  }
+  
+  body{
+    color: #dfdfdf;
+  }
+  
+  .credit-card4{
+    background-color: #f9f9fc !important;
+    width:25rem !important;
+  color: white !important;
+    display: flex;
+  
+  height: 17rem ;
+  }
+  
+  .main-wallet{
+    height: 100vh;
+  }
+  
+  .wallet-top-card{
+    background-color: rgb(243, 241, 241) !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  .card-bank{
+    width: 23rem ;
+  }
+  .card-bank1{
+    width: 23rem ; 
+     position: absolute;
+     top: 11rem;
+     left: 6rem;
+  
+  }
+  .footer-container {
+    position: fixed;
+    bottom: 0;
+    margin-top: 4rem;
+    width: 100%;
+  }
+  .mombile-text{
+    border: 0.1px solid rgb(114, 111, 111) !important;
+    color: #0f0f0f;
+    border-radius: .07rem;
+    Width: 16rem !important;
+  }
+  .card-bank img{
+    width: 23rem;
+  }
+  .card-bank1 img{
+    width: 23rem;
+  }
+  .PaymentForm{
+    width: 100%;
+    display: flex ;
+   flex-direction: row ;
+   flex-wrap: wrap;
+   /* align-items: center; */
+   justify-content: space-evenly;
+   /* padding: 2rem; */
+   padding-top: 2rem;
+   gap: 5rem;
+   
+  }
+  .Cards-sec{
+    margin-right: 10rem !important;
+  }
+  .gen-forms{
+    width: 100%;
+    display: flex ;
+   flex-direction: column ;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   gap: 5rem !important;
+  
+  }
+  .card-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .button{
+    background-color: #3b3763 !important;
+    color: white !important;
+  }
+  .credit-card{
+    display: flex;
+    background-color: #fff !important;
+    width: 35%;
+    height: 17rem ;
+  }
+  .credit-card1{
+    display: flex;
+    background-color: #fff !important;
+    width: 35%;
+    height: 21rem ;
+  }
+  .btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  /* your-styles.css */
+  
+  .top-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .top-card-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .wallet-top-card {
+    background-color: #3498db;
+    color: white;
+    margin: 10px;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .icon {
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    margin-top: 10px;
+  }
+  
+  .mombile {
+    display: none; /* Hide on larger screens */
+  }
+  /* your-styles.css */
+  
+  
+  
+  .animated-card {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .animated-card.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .graph{
+    width: 70%;
+  }
+  @media only screen and (max-width: 600px) {
+    /* Show mombile text on smaller screens */
+    .graph{
+      width: 100% !important; 
+    }
+    .mombile {
+      display: block;
+      color: white; 
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+  .card-width{
+    width: 100% !important;
+  }
+    /* Hide other components on smaller screens */
+    .wallet-top-card {
+      display: none;
+    }
+  }
+  
+  .card-width{
+    width: 29rem ;
+  }
+  

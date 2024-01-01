@@ -1,0 +1,30 @@
+.navbar{
+  background-color: white !important;
+  color: #000 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.nav-items{
+  display: flex ;
+ }
+.search{
+  display: flex !important;
+  border: 0.3px solid rgb(138, 132, 132);
+  width: 27rem !important;
+  border-radius: 1rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+ .search {
+  display: none !important;
+ }
+ .nav-items{
+  display: none !important;
+ }
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0 ;
+  padding: 0 ;
+}
