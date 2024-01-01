@@ -10,21 +10,20 @@ const navlinks = [
   'Finance & Accounting', 
   'Office Productivity',
 ];
-const Topbar = () => {
 
-  function TopBar(props) {
-    return (
-      <Div>
-        {navlinks.map((link, index) => (
-          <Btn key={index}>{link}</Btn>
-        ))}
-      </Div>
-    );
-  }
-
+function TopBar(props) {
+  return (
+    <Div>
+      {navlinks.map((link, index) => (
+        <Btn key={index}>{link}</Btn>
+      ))}
+    </Div>
+  );
 }
 
-export default Topbar
+export default TopBar;
+
+
 
 const Div = styled.div`
   border: 1px solid #aba7a7;
@@ -41,9 +40,9 @@ const Btn = styled.button`
   align-items: center;
   padding: 10px 20px;
   margin: 0 10px;
-  background-color: #EBF2EB; /
+  background-color: #0C0E0C; /
   border: none; 
-  color: black; 
+  color: white; 
   text-align: center;
   text-decoration: none; 
   font-size: 16px;
@@ -51,6 +50,8 @@ const Btn = styled.button`
   cursor: pointer; 
 
   &:hover {
-    background-color: #D99C52;
+    background-color: #45a049;
   }
 `;
+
+
