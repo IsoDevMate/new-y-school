@@ -1,3 +1,4 @@
+
 /* eslint-disable no-unused-vars */
 import React, { Suspense, useCallback, useEffect, useMemo, useState } from "react";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
@@ -6,7 +7,7 @@ import { ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 import { LoginOutlined } from "@mui/icons-material";
 import { signOut } from "firebase/auth";
 import './App.css'
-
+import styled from 'styled-components'
 
 const loadHome = () => import("./pages/Home");
 const loadNav = () => import("./components/Navbar");
@@ -22,13 +23,6 @@ const Home = React.lazy(() => loadHome());
 const Topbar = React.lazy(() => loadNav());
 const Navbar = React.lazy(() => loadTopbar());
 const Login = React.lazy(() => loadLogin());
-
-
-
-
-
-
-
 
 
 
@@ -67,6 +61,7 @@ function App() {
     // }
   };
   return (
+
     <div>
       <Suspense fallback={<div>Loading...</div>}>
           {" "}
@@ -87,5 +82,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
