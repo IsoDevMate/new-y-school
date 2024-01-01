@@ -226,7 +226,7 @@ const toggleOpen = () => setBasicModal(!basicModal);
                   className="logo"
                 />
               </div>
-              <h4 style={{ color: 'white' }}>  Yafreeka Studio</h4>
+              <h4 style={{ color: 'white' }}>  Y-Elearning</h4>
             </div>
             <form autoComplete="off">
               <div>
