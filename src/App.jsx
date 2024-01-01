@@ -2,16 +2,20 @@
 import React, { Suspense, useCallback, useMemo } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Topbar from "./Componenents/Topbar";
-import Navbar from "./Componenents/Navbar";
+
 
 const loadHome = () => import("./pages/Home");
+const loadNav = () => import("./components/Navbar");
+const loadTopbar = () => import("./components/Topbar");
+
 // eslint-disable-next-line react/prop-types, no-unused-vars
 
 
 
 
 const Home = React.lazy(() => loadHome());
+const Topbar = React.lazy(() => loadNav());
+const Navbar = React.lazy(() => loadTopbar());
 
 function App() {
   return (
