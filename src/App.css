@@ -1,5 +1,18 @@
+.product--image {
+  width: 100%;
+  height: 16em;
+  object-fit: cover;
+}
 
-=======
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  max-width: 320px;
+  margin: auto 1rem;
+  text-align: center;
+  font-family: arial;
+}
+
 .ant-btn-primary {
     background-color: #3fc060 !important;
     border-color: #3fc060 !important;

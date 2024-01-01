@@ -1,59 +1,34 @@
-/* eslint-disable react/prop-types */
-import styled from "styled-components";
+import React from "react";
+import Card from 'react-bootstrap/Card';
+//import minbootsrap /css
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 export const Cards = (props) => {
   return (
-    <div className="card">
-      <Img src={props.url} alt="cards-image" />
-      <Div>{props.title}</Div>
-      <Title>{props.name}</Title>
-      <Price>{props.price}</Price>
-    </div>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={props.url} alt="cards-image" />
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text>{props.name}</Card.Text>
+        <Card.Text>{props.price}</Card.Text>
+       
+      </Card.Body>
+    </Card>
   );
 }
 
 export const Cards1 = (props) => {
   return (
-    <div className="card">
-      <Img src={props.url} alt="cards-image" />
-      <Div>{props.title}</Div>
-      <Title>{props.name}</Title>
-      <Price>{props.price}</Price>
-    </div>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={props.url} alt="cards-image" />
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text>{props.name}</Card.Text>
+        <Card.Text>{props.price}</Card.Text>
+       
+      </Card.Body>
+    </Card>
   );
 }
-
-
-
-
-
-const Div = styled.h2`
-  color: var(--red, #000);
-  align-self: stretch;
-  margin-top: 13px;
-  font: 400 15px Inter, sans-serif;
-`;
-
-
-const Title = styled.p`
-  color: #aba7a7;
-  align-self: stretch;
-  margin-top: 8px;
-  font: 400 13px Inter, sans-serif;
-`;
-
-const Price = styled.p`
-  color: var(--red, #000);
-  align-self: stretch;
-  margin-top: 8px;
-  font: 400 13px Inter, sans-serif;
-`;
-
-const Img = styled.img`
-  aspect-ratio: 1.43;
-  object-fit: contain;
-  object-position: center;
-  width: 219px;
-  overflow: hidden;
-  align-self: center;
-`;
