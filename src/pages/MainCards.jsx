@@ -35,8 +35,18 @@ const SlickArrowRight = ({ onClick }) => (
   </ArrowContainer>
 );
 
-export default function MainCards() {
 
+
+
+export default function MainCards() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
 
   const cards = CardsData.map((item, index) => (
     <Cards
@@ -45,6 +55,7 @@ export default function MainCards() {
       title={item.title}
       name={item.name}
       price={item.price}
+      loading={loading}
     />
   ));
 
@@ -55,6 +66,7 @@ export default function MainCards() {
       title={item.title}
       name={item.name}
       price={item.price}
+      loading={loading}
     />
   ));
 
@@ -123,5 +135,7 @@ export default function MainCards() {
       <Slider {...settings}>{cards1}</Slider>
     </div>
   );
+
+
 }
 
