@@ -55,14 +55,7 @@ export const responsive = {
            name: "Jack mahn",
          price:110000,
        },
-       {
-        imageurl:
-        "https://res.cloudinary.com/pitz/image/upload/v1704120680/WhatsApp_Image_2024-01-01_at_17.49.02_1_ntgmai.jpg",
-        
-         title: " Electronics and PCB design",
-         name: "Jeff ayako",
-         price:30000,
-       },
+  
        
      
 
@@ -71,7 +64,7 @@ export const responsive = {
   export const Topcourses = [
     {
       imageurl:
-       "images.png",
+      "https://res.cloudinary.com/pitz/image/upload/v1704120680/WhatsApp_Image_2024-01-01_at_17.49.02_1_ntgmai.jpg",
        title: "Product management 101",
        name: "rof James mwangi",
        price:3000,
@@ -79,44 +72,28 @@ export const responsive = {
      },
      {
       imageurl:
-        "images.png",
+      "https://res.cloudinary.com/pitz/image/upload/v1704120680/WhatsApp_Image_2024-01-01_at_17.49.02_1_ntgmai.jpg",
       title: "business 102",
       name:"Willis mwamburi",
        price:10000,
      },
      {
       imageurl:
-      "images.png",
+      "https://res.cloudinary.com/pitz/image/upload/v1704120680/WhatsApp_Image_2024-01-01_at_17.49.02_1_ntgmai.jpg",
       title: "Team building 2023 master class",
       name:"Jack  Miller",
        price:20000,
      },
      {
       imageurl:
-      "images.png",
+      "https://res.cloudinary.com/pitz/image/upload/v1704120680/WhatsApp_Image_2024-01-01_at_17.49.02_1_ntgmai.jpg",
       title: "introduction to business management",
       name:"florence muhat",
        price:30000,
      },
-     {
-      imageurl:
-      "images.png",
-       title: "crash course Electronics and PCB design<",
-       name: "Jeff ayako",
-       price:30000,
-     },
+
 
     
   ]
 
-  /*export const navlinks = [
-    Business,
-    Technology,
-    Design,
-    Marketing,
-    Personal,
-    Photography,
-    Finance & Accounting, 
-    OficeProductivity,
-  ]*/
 
