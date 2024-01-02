@@ -13,7 +13,6 @@ import {
   MDBModal,
   MDBModalDialog,
   MDBModalContent,
-  
   MDBModalBody,
   MDBModalFooter,
 } from 'mdb-react-ui-kit';
