@@ -8,7 +8,6 @@ const Home = () => {
   return (
     <div>
       <Categories/>
-      <hr/>
       <MainCards/>
     </div>
   )
