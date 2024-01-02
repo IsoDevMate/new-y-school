@@ -9,6 +9,8 @@ const CategoriesDiv = styled.div`
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
+  justify-content: space-around;
+  color:black !important;
 
   @media (min-width: 600px) {
     flex-wrap: wrap;
@@ -18,6 +20,8 @@ const CategoriesDiv = styled.div`
 
 const CategoryButton = styled(Button)`
   margin: 10px;
+  color:black !important;
+
 
   @media (max-width: 600px) {
     &:nth-child(n + 4) {

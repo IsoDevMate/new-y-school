@@ -8,6 +8,7 @@ import { LoginOutlined } from "@mui/icons-material";
 import { signOut } from "firebase/auth";
 import './App.css'
 import styled from 'styled-components'
+import Footer from "./components/Footer";
 
 const loadHome = () => import("./pages/Home");
 const loadNav = () => import("./components/Navbar");
@@ -65,10 +66,11 @@ function App() {
     <div>
       <Suspense fallback={<div>Loading...</div>}>
           {" "}
-          <Topbar /> 
           {/* <Navbar /> */}
           {currentUser? (
-            <>
+            <>       
+               <Topbar /> 
+
              <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -78,6 +80,8 @@ function App() {
          
         {/* <CallbackComponent /> */}
         {/* <ExpensiveCalculationComponent/> */}
+        <hr />
+        <Footer/>
       </Suspense>
     </div>
   );
