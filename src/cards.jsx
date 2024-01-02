@@ -81,7 +81,7 @@ export const Cards = (props) => {
       initial={{ opacity: 0, y: 100 }}
       whileHover={{ scale: 1.04 }}
     >
-      <Card sx={{ width: "17rem", height: "17rem" }}>
+      <Card sx={{ width: "17rem", minHeight: "20rem" }}>
         <Link to={"/"}>
           <CardMedia sx={{ height: 140, width: "17rem" }} image={props.url} title="Courses" />
         </Link>
@@ -100,6 +100,7 @@ export const Cards = (props) => {
 };
 
 
+
 export const Cards1 = (props) => {
   return (
     <CardContainer
@@ -107,7 +108,7 @@ export const Cards1 = (props) => {
       initial={{ opacity: 0, y: 100 }}
       whileHover={{ scale: 1.04 }} // corrected here
     >
-      <Card sx={{ width: "17rem", height: "17rem" }}>
+      <Card sx={{ width: "17rem", minHeight: "20rem" }}>
          <Link to={"/"} >
         <CardMedia sx={{ height: 140, width: "17rem" }} image={props.url} title="Courses" />
         </Link>
