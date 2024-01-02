@@ -21,6 +21,7 @@ const CardContainer = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 10px;
 
   img {
     width: 17rem;
@@ -101,12 +102,11 @@ export const Cards = (props) => {
 
 export const Cards1 = (props) => {
   return (
-   
     <CardContainer
-    animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.2 }, y: 0 }}
-    initial={{ opacity: 0, y: 100 }}
-    whilehover={{ scale: 1.04 }}
-  >
+      animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.2 }, y: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      whileHover={{ scale: 1.04 }} // corrected here
+    >
       <Card sx={{ width: "17rem", height: "17rem" }}>
          <Link to={"/"} >
         <CardMedia sx={{ height: 140, width: "17rem" }} image={props.url} title="Courses" />
@@ -122,7 +122,7 @@ export const Cards1 = (props) => {
         </CardActions>
       </Card>
     </CardContainer>
-   
   );
 };
+
 
