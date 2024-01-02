@@ -251,7 +251,7 @@ export default function DrawerAppBar(props) {
               </Button>
             ))}
             <CiHeart style={{ marginRight: "1rem" }} size={30} />
-            <FaShoppingBag style={{ marginRight: "1rem" }} size={23} />
+            <FaShoppingBag style={{ marginRight: "1rem",marginTop:'1px' }} size={23} />
             <IoIosNotificationsOutline
               style={{ marginRight: "1rem" }}
               size={30}
