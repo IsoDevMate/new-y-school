@@ -13,6 +13,16 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Skeleton from "@mui/material/Skeleton";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Roboto, sans-serif', 
+  },
+});
+
 
 
 
@@ -73,8 +83,40 @@ const CardContainer = styled(motion.div)`
     }
   }
 `;
-
 export const Cards = (props) => {
+  const { loading, url, title, name, price } = props;
+
+  return (
+    <ThemeProvider theme={theme}>
+    <CardContainer
+      animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.2 }, y: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      whileHover={{ scale: 1.04 }}
+    >
+       <Card sx={{ width: "17rem", minHeight: "20rem" }}>
+         <Link to={"/"} >
+        {loading ? <Skeleton variant="rectangular" width="17rem" height="140px" /> : <CardMedia sx={{ height: 140, width: "17rem" }} image={url} title="Courses" />}
+        </Link>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {loading ? <Skeleton variant="text" /> : title}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          {loading ? <Skeleton variant="text" width="2rem" height="30px"/> : <Button size="small">{name}</Button>}
+          {loading ? <Skeleton variant="text" width="2rem" height="30px"/> : <Button size="small">{price}</Button>}
+        </CardActions>
+      </Card>
+    </CardContainer>
+    </ThemeProvider>
+  );
+};
+
+
+
+export const Cards1 = (props) => {
+  const { loading, url, title, name, price } = props;
+
   return (
     <CardContainer
       animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.2 }, y: 0 }}
@@ -82,48 +124,22 @@ export const Cards = (props) => {
       whileHover={{ scale: 1.04 }}
     >
       <Card sx={{ width: "17rem", minHeight: "20rem" }}>
-        <Link to={"/"}>
-          <CardMedia sx={{ height: 140, width: "17rem" }} image={props.url} title="Courses" />
-        </Link>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {props.title}
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">{props.name}</Button>
-          <Button size="small">{props.price}</Button>
-        </CardActions>
-      </Card>
-    </CardContainer>
-  );
-};
-
-
-
-export const Cards1 = (props) => {
-  return (
-    <CardContainer
-      animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.2 }, y: 0 }}
-      initial={{ opacity: 0, y: 100 }}
-      whileHover={{ scale: 1.04 }} // corrected here
-    >
-      <Card sx={{ width: "17rem", minHeight: "20rem" }}>
          <Link to={"/"} >
-        <CardMedia sx={{ height: 140, width: "17rem" }} image={props.url} title="Courses" />
+        {loading ? <Skeleton variant="rectangular" width="17rem" height="140px" /> : <CardMedia sx={{ height: 140, width: "17rem" }} image={url} title="Courses" />}
         </Link>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {props.title}
+            {loading ? <Skeleton variant="text" /> : title}
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">{props.name}</Button>
-          <Button size="small">{props.price}</Button>
+          {loading ? <Skeleton variant="text"  width="2rem" height="30px"/> : <Button size="small">{name}</Button>}
+          {loading ? <Skeleton variant="text"   width="2rem" height="30px"/> : <Button size="small">{price}</Button>}
         </CardActions>
       </Card>
     </CardContainer>
   );
 };
+
 
 
