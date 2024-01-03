@@ -104,7 +104,7 @@ export default function DrawerAppBar(props) {
     setMenu(false);
   };
   const [currentUser, setCurrentUser] = React.useState(null);
-  console.log(currentUser);
+  console.log('users',currentUser);
   React.useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
       if (user) {
