@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -6,12 +5,24 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import Skeleton from "@mui/material/Skeleton";
 import { CardsData, Topcourses } from "../data";
 
+
+
 export default function MediaCard() {
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <dir style={{ dispalay: "flex", flexDirection: "colum", width: "100%" }}>
-      <h4
+    <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
+            <h4
         style={{
           padding: "1rem",
           paddingLeft: "3rem",
@@ -24,33 +35,38 @@ export default function MediaCard() {
       >
         Students are viewing
       </h4>
+       
       <div className="home-cards">
         {CardsData.map((i) => {
           return (
-            <>
-              <Card sx={{ minWidth: 270 }}>
-                <CardMedia
-                  sx={{ height: 140 }}
-                  image={i.imageurl}
-                  title="green iguana"
-                />
-                <CardContent>
+            <Card sx={{ minWidth: 270 }}>
+              {loading ? (
+                <Skeleton variant="rectangular" width="100%" height={140} />
+              ) : (
+                <CardMedia sx={{ height: 140 }} image={i.imageurl} title="green iguana" />
+              )}
+              <CardContent>
+                {loading ? (
+                  <Skeleton variant="text" />
+                ) : (
                   <Typography gutterBottom variant="h5" component="div">
                     {i.title}
                   </Typography>
-                  {/* <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography> */}
-                </CardContent>
-                <CardActions
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
+                )}
+              </CardContent>
+              <CardActions style={{ display: "flex", justifyContent: "space-between" }}>
+                {loading ? (
+                  <Skeleton variant="text" width="6rem" height="30px"/>
+                ) : (
                   <Button size="small">{i.name}</Button>
+                )}
+                {loading ? (
+                  <Skeleton variant="text" width="6rem" height="30px"/>
+                ) : (
                   <Button size="small">{i.price}</Button>
-                </CardActions>
-              </Card>
-            </>
+                )}
+              </CardActions>
+            </Card>
           );
         })}
       </div>
@@ -70,33 +86,39 @@ export default function MediaCard() {
       <div className="home-cards">
         {Topcourses.map((i) => {
           return (
-            <>
-              <Card sx={{ minWidth: 270 }}>
-                <CardMedia
-                  sx={{ height: 140 }}
-                  image={i.imageurl}
-                  title="green iguana"
-                />
-                <CardContent>
+            <Card sx={{ minWidth: 270 }}>
+              {loading ? (
+                <Skeleton variant="rectangular" width="100%" height={140} />
+              ) : (
+                <CardMedia sx={{ height: 140 }} image={i.imageurl} title="green iguana" />
+              )}
+              <CardContent>
+                {loading ? (
+                  <Skeleton variant="text" />
+                ) : (
                   <Typography gutterBottom variant="h5" component="div">
                     {i.title}
                   </Typography>
-                  {/* <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography> */}
-                </CardContent>
-                <CardActions
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
+                )}
+              </CardContent>
+              <CardActions style={{ display: "flex", justifyContent: "space-between" }}>
+                {loading ? (
+                  <Skeleton variant="text" width="6rem" height="30px"/>
+                ) : (
                   <Button size="small">{i.name}</Button>
+                )}
+                {loading ? (
+                  <Skeleton variant="text" width="6rem" height="30px"/>
+                ) : (
                   <Button size="small">{i.price}</Button>
-                </CardActions>
-              </Card>
-            </>
+                )}
+              </CardActions>
+            </Card>
           );
         })}
       </div>
-    </dir>
+ 
+    </div>
+    
   );
 }
