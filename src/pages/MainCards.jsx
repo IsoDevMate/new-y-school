@@ -117,9 +117,7 @@ export default function MainCards() {
         }
       }
     ],
-    nextArrow: <SlickArrowRight />,
-    prevArrow: <SlickArrowLeft />,
-    
+
   };
 
  

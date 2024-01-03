@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <div>
       <Categories/>
-      <HomeCards  />
-      {/* <MainCards/> */}
+       {/* <HomeCards  />*/}
+     <MainCards/> 
     </div>
   )
 }
