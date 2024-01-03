@@ -35,6 +35,11 @@ const SlickArrowRight = ({ onClick }) => (
   </ArrowContainer>
 );
 
+//how do i hide the arrows and just allow the user to scroll through the cards? smoothly 
+
+
+
+
 
 
 
@@ -71,39 +76,49 @@ export default function MainCards() {
   ));
 
   const settings = {
+    lazyLoad: true,
     infinite: false,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
+   
+      initialSlide: 0,
     responsive: [
     
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
+          slidesToScroll: 2,
+          infinite: false,
+        }
+      },
+
+
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 400,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 2
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 300,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
       }
     ],
-    prevArrow: <SlickArrowLeft />,
-    nextArrow: <SlickArrowRight />,
+    
   };
 
  
