@@ -6,16 +6,23 @@ const CategoriesDiv = styled.div`
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
-  justify-content: flex-start; /* Adjusted to start from the left */
+  justify-content: flex-start; 
   color: black !important;
   width: 100%;
   gap: 2rem;
   padding-left: 1rem;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+
+  &::-webkit-scrollbar {
+    display: none; 
+  }
 
   @media (min-width: 600px) {
     /* Add any additional styling for larger screens if needed */
   }
 `;
+
 
 const CategoryButton = styled(Button)`
   margin: 10px 0; /* Increased margin to provide more space */

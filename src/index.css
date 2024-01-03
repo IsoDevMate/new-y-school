@@ -80,7 +80,10 @@
   align-items: center;
   gap: 2rem;
   padding: 1rem;
-  overflow-x: auto; /* or overflow-x: scroll; */
+  overflow-x: auto; 
+  &::-webkit-scrollbar {
+    display: none; 
+  }
 }
 .n-p{
   display: flex;
