@@ -53,9 +53,16 @@
  .search {
   display: none !important;
  }
+ .box{
+  display: none !important;
+ }
  .nav-items{
   display: none !important;
  }
+ .card{
+  min-width: 320px !important;
+  background-color: white !important;
+}
 }
 
 *{
@@ -111,4 +118,13 @@ color: black !important;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+}
+
+.card{
+  min-width: 270px;
+  background-color: white !important;
+  height: 300px;
+}
+.box{
+  display: flex;
 }

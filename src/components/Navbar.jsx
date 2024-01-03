@@ -20,7 +20,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { CiHeart } from "react-icons/ci";
 import { FaShoppingBag } from "react-icons/fa";
 import { IoIosNotificationsOutline } from "react-icons/io";
-import { ArrowBack, LoginOutlined, PlusOneSharp } from "@mui/icons-material";
+import { ArrowBack, LoginOutlined } from "@mui/icons-material";
 import { auth } from "../../firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
@@ -255,24 +255,11 @@ export default function DrawerAppBar(props) {
             ):            <p className="n-p" style={{ marginBottom: "" }}>Y-shule</p>
           }
           </Typography>
-          { menu==true ? (
-             <Box
-             sx={{
-               flexGrow: 1,
-               display: "flex",
-               alignItems: "center",
-             }}
-           >
-             <Search className="search">
-               <SearchIconWrapper>
-                 <SearchIcon />
-               </SearchIconWrapper>
-               <StyledInputBase
-                 placeholder="Search…"
-                 inputProps={{ "aria-label": "search" }}
-               />
-             </Search>
-           </Box>
+          { menu==true && width<=700? (
+            <>
+           
+            </>
+            
           ) : (
             <Box
               sx={{
@@ -352,7 +339,10 @@ export default function DrawerAppBar(props) {
                     />
                   </ListItemButton>
                 ) : (
-                  <ListItemButton
+                 <>
+                 {width>=700 &&(
+                  <>
+                   <ListItemButton
                     sx={{
                       minHeight: 48,
                       justifyContent: open ? "initial" : "center",
@@ -370,6 +360,10 @@ export default function DrawerAppBar(props) {
                       />
                     </Link>
                   </ListItemButton>
+                  </>
+                 )}
+                 
+                 </>
                 )}
               </Menu>
             </Box>

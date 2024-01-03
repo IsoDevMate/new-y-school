@@ -28,7 +28,7 @@ export default function MediaCard() {
         {CardsData.map((i) => {
           return (
             <>
-              <Card sx={{ minWidth: 270 }}>
+              <Card className="card" >
                 <CardMedia
                   sx={{ height: 140 }}
                   image={i.imageurl}
@@ -71,7 +71,7 @@ export default function MediaCard() {
         {Topcourses.map((i) => {
           return (
             <>
-              <Card sx={{ minWidth: 270 }}>
+              <Card className="card">
                 <CardMedia
                   sx={{ height: 140 }}
                   image={i.imageurl}
