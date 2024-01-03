@@ -19,6 +19,9 @@
  .search {
   display: none !important;
  }
+ .n-p{
+  display: none !important;
+}
  .nav-items{
   display: none !important;
  }
@@ -79,7 +82,9 @@
   padding: 1rem;
   overflow-x: auto; /* or overflow-x: scroll; */
 }
-
+.n-p{
+  display: flex;
+}
 .couggrse{
   width: 17rem;
   height: 17rem !important;

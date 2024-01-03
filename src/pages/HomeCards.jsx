@@ -28,7 +28,7 @@ export default function MediaCard() {
         {CardsData.map((i) => {
           return (
             <>
-              <Card sx={{ minWidth: 270}}>
+              <Card sx={{ minWidth: 270 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image={i.imageurl}
@@ -43,7 +43,9 @@ export default function MediaCard() {
           species, ranging across all continents except Antarctica
         </Typography> */}
                 </CardContent>
-                <CardActions style={{display:'flex',justifyContent:'space-between'}}>
+                <CardActions
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
                   <Button size="small">{i.name}</Button>
                   <Button size="small">{i.price}</Button>
                 </CardActions>
@@ -52,15 +54,17 @@ export default function MediaCard() {
           );
         })}
       </div>
-      <h4 style={{ 
-        padding: "1rem", 
-        paddingLeft: "3rem", 
-        marginBottom: "1rem", 
-        border: "1px solid #ccc", 
-        borderRadius: "10px", 
-        boxShadow: "0 0 10px rgba(0,0,0,0.1)",
-        backgroundColor: "#f5f5f5", 
-      }}>
+      <h4
+        style={{
+          padding: "1rem",
+          paddingLeft: "3rem",
+          marginBottom: "1rem",
+          border: "1px solid #ccc",
+          borderRadius: "10px",
+          boxShadow: "0 0 10px rgba(0,0,0,0.1)",
+          backgroundColor: "#f5f5f5",
+        }}
+      >
         Top courses in business
       </h4>
       <div className="home-cards">
@@ -82,7 +86,9 @@ export default function MediaCard() {
           species, ranging across all continents except Antarctica
         </Typography> */}
                 </CardContent>
-                <CardActions  style={{display:'flex',justifyContent:'space-between'}}>
+                <CardActions
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
                   <Button size="small">{i.name}</Button>
                   <Button size="small">{i.price}</Button>
                 </CardActions>
