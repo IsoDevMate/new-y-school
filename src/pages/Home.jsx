@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Categories/>
-      <MainCards/>
+      <HomeCards  />
       {/* <MainCards/> */}
     </div>
   )
