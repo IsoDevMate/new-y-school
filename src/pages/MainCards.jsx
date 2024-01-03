@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Cards, Cards1 } from "../cards";
 import { CardsData, Topcourses } from "../data";
 import Slider from "react-slick";
@@ -58,7 +58,6 @@ export default function MainCards() {
     slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
-    
       {
         breakpoint: 1024,
         settings: {
@@ -71,10 +70,9 @@ export default function MainCards() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 2
-        }
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
       },
       {
         breakpoint: 480,
@@ -97,4 +95,3 @@ export default function MainCards() {
     </div>
   );
 }
-

@@ -1,13 +1,10 @@
-
-
-
 /* eslint-disable no-unused-vars */
 import { Button } from '@mui/material'
 import styled from 'styled-components'
 
 const CategoriesDiv = styled.div`
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
   white-space: nowrap;
 
   @media (min-width: 600px) {
@@ -20,9 +17,13 @@ const CategoryButton = styled(Button)`
   margin: 10px;
 
   @media (max-width: 600px) {
-    &:nth-child(n + 4) {
+    &:nth-child(n + 5) {
       display: none;
     }
+  }
+
+  &:first-child {
+    background-color: #f0f0f0;
   }
 `;
 
