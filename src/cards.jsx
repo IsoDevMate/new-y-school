@@ -16,14 +16,13 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Skeleton from "@mui/material/Skeleton";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import  media  from './breakpoints'
 
 const theme = createTheme({
   typography: {
     fontFamily: 'Roboto, sans-serif', 
   },
 });
-
 
 
 
@@ -35,17 +34,32 @@ const CardContainer = styled(motion.div)`
   gap: 2em;
   margin: 10px;
   overflow: hidden;
+  justify-content:space-between;
   padding-bottom: 10px important!;
   transition: 0.5s ease;
   border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 2em;
+  margin-bottom: 2em;
+  min-height: 15rem;
+
+  &:hover {
+    transform: scale(1.03);
+    
   }
+
+
+  gap: 2em;
+    ${media.sm`
+    width: 100%;
+    `}
+  
+  
   
   .items {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+   
     margin-top: 2em;
     z-index: 2;
     min-height: 15rem;
@@ -66,6 +80,9 @@ const CardContainer = styled(motion.div)`
       border-radius: 20px;
       cursor: pointer;
       transition: 0.4s;
+      &:hover {
+        transform: scale(1.03);
+      }
   }
 
   h2 {
@@ -86,39 +103,42 @@ const CardContainer = styled(motion.div)`
     align-items: center;
   }
 
-    
-    
-    }
+   
+  }
   }
 `;
+    
+  
 export const Cards = (props) => {
-  const { loading, url, name, price,title } = props;
-  return (
-    <ThemeProvider theme={theme}>
-    <CardContainer className="items">
-      
-          <motion.div   animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.2 }, y: 0 }}
-           initial={{ opacity: 0, y: 100 }}
-           whileHover={{ scale: 1.03 }}
-           className="item">
-          <Link to={"/"} >
-          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}} >
-          <img src={url} alt="Courses" />
-          </div>
-          </Link> 
+  const { loading, url, title, name, price } = props;
 
-            <h2>{title}</h2>
-            <span>
-                <Button size="small">{name}</Button>
-                </span>
-              <span><Button size="small">${price}</Button>
-             </span> 
-          
-          </motion.div> 
-      
+  return (
+    
+    <CardContainer
+      animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.2 }, y: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      whileHover={{ scale: 1.01 }}
+    >
+      <Card sx={{ width: "17rem", minHeight: "20rem" }}>
+         <Link to={"/"} >
+          <div>
+          {loading ? <Skeleton variant="rectangular" width="17rem" height="140px" /> : <CardMedia sx={{ height: 140, width: "17rem" }} image={url} title="Courses" />}
+          </div>
+        </Link>
+        <CardContent>
+        <Typography gutterBottom variant="h5" component="div" noWrap={false}>
+         {loading ? <Skeleton variant="text" /> : title}
+         </Typography>
+
+        </CardContent>
+        <CardActions style={{ flexDirection: 'column' }}>
+         {loading ? <Skeleton variant="text" width="2rem" height="30px"/> : <Button size="small">{name}</Button>}
+          {loading ? <Skeleton variant="text" width="2rem" height="30px"/> : <Button size="small">{price}</Button>}
+         </CardActions>
+      </Card>
     </CardContainer>
-    </ThemeProvider>
-  );
+   
+);
 };
 
 
@@ -127,6 +147,7 @@ export const Cards1 = (props) => {
   const { loading, url, title, name, price } = props;
 
   return (
+  
     <CardContainer
       animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.2 }, y: 0 }}
       initial={{ opacity: 0, y: 100 }}
@@ -148,8 +169,6 @@ export const Cards1 = (props) => {
          </CardActions>
       </Card>
     </CardContainer>
-  );
+   
+);
 };
-
-
-
