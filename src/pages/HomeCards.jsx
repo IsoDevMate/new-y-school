@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import {Link} from "react-router-dom";
 import styled from "styled-components";
 import media from "../breakpoints";
+import GalleryVertical from "../card";
 
 
 const Cards = styled(motion.div)`
@@ -66,51 +67,7 @@ export default function MediaCard() {
       >
         Students are viewing
       </h4>
-      <div className="home-cards">
-        {CardsData.map((i) => {
-          return (
-            <>
-              <Cards
-              animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.2 }, y: 0 }}
-              initial={{ opacity: 0, y: 100 }}
-              whileHover={{ scale: 1.03 }} >
-              <Card className="card">
-               <Link to={"/"} >
-               {loading ? (
-                <Skeleton variant="rectangular" width="100%" height={140} />
-              ) : (
-                <CardMedia sx={{ height: 140 }} image={i.imageurl} title="green iguana" />
-              )}
-              
-              </Link >
-              <CardContent>
-                {loading ? (
-                  <Skeleton variant="text" />
-                ) : (
-                  <Typography gutterBottom variant="h5" component="div">
-                    {i.title}
-                  </Typography>
-                )}
-              </CardContent>
-              <CardActions style={{ display: "flex", justifyContent: "space-between" }}>
-                {loading ? (
-                  <Skeleton variant="text" width="6rem" height="30px"/>
-                ) : (
-                  <Button size="small">{i.name}</Button>
-                )}
-                {loading ? (
-                  <Skeleton variant="text" width="6rem" height="30px"/>
-                ) : (
-                  <Button size="small">{i.price}</Button>
-                )}
-              </CardActions>
-              </Card>
-              </Cards>
-           
-            </>
-          );
-        })}
-      </div>
+     <GalleryVertical />
       <h4
         style={{
           padding: "1rem",
@@ -124,47 +81,7 @@ export default function MediaCard() {
       >
         Top courses in business
       </h4>
-      <div className="home-cards">
-        {Topcourses.map((i) => {
-          return (
-            <>
-            <Cards
-              animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.2 }, y: 0 }}
-              initial={{ opacity: 0, y: 100 }}
-              whileHover={{ scale: 1.03 }} >
-              <Card className="card">
-              {loading ? (
-                <Skeleton variant="rectangular" width="100%" height={140} />
-              ) : (
-                <CardMedia sx={{ height: 140 }} image={i.imageurl} title="green iguana" />
-              )}
-              <CardContent>
-                {loading ? (
-                  <Skeleton variant="text" />
-                ) : (
-                  <Typography gutterBottom variant="h5" component="div">
-                    {i.title}
-                  </Typography>
-                )}
-              </CardContent>
-              <CardActions style={{ display: "flex", justifyContent: "space-between" }}>
-                {loading ? (
-                  <Skeleton variant="text" width="6rem" height="30px"/>
-                ) : (
-                  <Button size="small">{i.name}</Button>
-                )}
-                {loading ? (
-                  <Skeleton variant="text" width="6rem" height="30px"/>
-                ) : (
-                  <Button size="small">{i.price}</Button>
-                )}
-              </CardActions>
-            </Card>
-            </Cards>
-            </>
-          );
-        })}
-      </div>
+      <GalleryVertical />
 </dir>
 );
 }

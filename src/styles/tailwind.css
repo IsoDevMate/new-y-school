@@ -1,0 +1,25 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+  }
+  
+  .title:hover {
+    overflow: visible;
+    width: auto;
+  }
+  
+  .link {
+    color: black;
+  }
+  
+  .button {
+    background-color: black;
+    color: white;
+  }
+  
