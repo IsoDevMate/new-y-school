@@ -20,7 +20,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { CiHeart } from "react-icons/ci";
 import { FaShoppingBag } from "react-icons/fa";
 import { IoIosNotificationsOutline } from "react-icons/io";
-import { ArrowBack, LoginOutlined } from "@mui/icons-material";
+import { ArrowBack, LoginOutlined, PlusOneSharp } from "@mui/icons-material";
 import { auth } from "../../firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
@@ -64,8 +64,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
     // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(5)})`,
-    // 1em + ${theme.spacing(4)}),
+    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
     width: "100%",
     [theme.breakpoints.up("md")]: {
@@ -256,11 +255,24 @@ export default function DrawerAppBar(props) {
             ):            <p className="n-p" style={{ marginBottom: "" }}>Y-shule</p>
           }
           </Typography>
-          { menu==true && width<=700? (
-            <>
-           
-            </>
-            
+          { menu==true ? (
+             <Box
+             sx={{
+               flexGrow: 1,
+               display: "flex",
+               alignItems: "center",
+             }}
+           >
+             <Search className="search">
+               <SearchIconWrapper>
+                 <SearchIcon />
+               </SearchIconWrapper>
+               <StyledInputBase
+                 placeholder="Search…"
+                 inputProps={{ "aria-label": "search" }}
+               />
+             </Search>
+           </Box>
           ) : (
             <Box
               sx={{
@@ -283,7 +295,7 @@ export default function DrawerAppBar(props) {
 
           <Box style={{ display: "flex" }}>
             {navItems.map((item) => (
-              <Button className="nav-items" key={item} sx={{ color: "black",marginRight:'5rem' }}>
+              <Button className="nav-items" key={item} sx={{ color: "black" }}>
                 {item}
                 {/* <CiHeart style={{marginTop:'1rem'}} size={34}/> */}
               </Button>
@@ -340,10 +352,7 @@ export default function DrawerAppBar(props) {
                     />
                   </ListItemButton>
                 ) : (
-                 <>
-                 {width>=700 &&(
-                  <>
-                   <ListItemButton
+                  <ListItemButton
                     sx={{
                       minHeight: 48,
                       justifyContent: open ? "initial" : "center",
@@ -361,10 +370,6 @@ export default function DrawerAppBar(props) {
                       />
                     </Link>
                   </ListItemButton>
-                  </>
-                 )}
-                 
-                 </>
                 )}
               </Menu>
             </Box>
@@ -440,6 +445,6 @@ export default function DrawerAppBar(props) {
       <Box component="main" sx={{}}>
         <Toolbar />
       </Box>
-    </Box>
-  );
+    </Box>
+  );
 }
