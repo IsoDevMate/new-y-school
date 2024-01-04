@@ -27,8 +27,9 @@ const CategoriesDiv = styled.div`
 const CategoryButton = styled(Button)`
   margin: 10px 0; /* Increased margin to provide more space */
   color: black !important;
+  width:'14rem'
   margin-left: 1rem;
-  padding: 8px 16px; /* Increased padding for better spacing */
+  padding: 8px 16px;
 `;
 
 const Categories = () => {

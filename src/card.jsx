@@ -104,7 +104,7 @@ function ButtonNext({ disabled, ...attributes }) {
               {title}
             </SfLink>
             <span className="block mt-2 font-bold">${price}</span>
-            <SfLink href="#" className="block link">
+            <SfLink href="#" className="block linkname">
               {name}
             </SfLink>
             

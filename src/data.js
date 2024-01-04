@@ -89,5 +89,12 @@ export const Topcourses = [
     price: 110000,
   },
 
+  {
+    imageurl:
+      "https://res.cloudinary.com/pitz/image/upload/v1704120679/WhatsApp_Image_2024-01-01_at_17.49.03_1_duh6sx.jpg",
 
+    title: "Introduction to game localization",
+    name: "Jack mahn",
+    price: 110000,
+  },
 ]
