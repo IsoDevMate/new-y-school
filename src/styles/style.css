@@ -14,3 +14,12 @@
     width: auto;
   }
   
+  .link {
+    color: black;
+  }
+  
+  .button {
+    background-color: black;
+    color: white;
+  }
+  
