@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { Button } from '@mui/material';
 import styled from 'styled-components';
+import media from '../breakpoints';
 
 const CategoriesDiv = styled.div`
   display: flex;
@@ -13,23 +14,24 @@ const CategoriesDiv = styled.div`
   padding-left: 1rem;
   -ms-overflow-style: none;  
   scrollbar-width: none;  
-
   &::-webkit-scrollbar {
     display: none; 
   }
 
   @media (min-width: 600px) {
-    /* Add any additional styling for larger screens if needed */
+    
   }
 `;
 
 
 const CategoryButton = styled(Button)`
-  margin: 10px 0; /* Increased margin to provide more space */
+  margin: 10px auto;
   color: black !important;
-  width:'14rem'
+  width: 100%;
   margin-left: 1rem;
   padding: 8px 16px;
+  background-color:  white !important;
+  disableRipple: true;
 `;
 
 const Categories = () => {

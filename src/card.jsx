@@ -53,11 +53,8 @@ function ButtonNext({ disabled, ...attributes }) {
   
   export default function GalleryVertical() {
   const [isLinkHovered, setIsLinkHovered] = React.useState(false);
-  const [isPrevClicked, setIsPrevClicked] = React.useState(false);
-  const [isNextClicked, setIsNextClicked] = React.useState(false);
-  const [isStarred, setIsStarred] = React.useState(false);
 
- 
+
     return (
         <SfScrollable
           className="m-auto py-4 items-center w-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
@@ -67,9 +64,9 @@ function ButtonNext({ disabled, ...attributes }) {
           {CardsData.map(({ imageurl, title, name, price }) => (
             <div
               key={title}
-              className="first:ms-auto last:me-auto ring-1 ring-inset ring-neutral-200 shrink-0 rounded-md hover:shadow-lg w-[148px] lg:w-[192px]"
+              className="first:ms-auto  last:me-auto ring-1 ring-inset ring-neutral-200 shrink-0 rounded-md hover:shadow-lg  w-[148px] lg:w-[192px]"
             >
-              <div className="relative w-[148px] lg:w-[192px]">
+              <div className="relative top-0 md:max-w-2xl">
                 <SfLink
                   href="#"
                   className={`block ${isLinkHovered ? 'hover:text-orange-500' : 'text-black'}`}
