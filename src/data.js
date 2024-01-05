@@ -1,6 +1,14 @@
 
-import ph from "./images/ITGAdxB.png";
-import ph2 from "./images/Redux.jpg";
+const categories = {
+  1: "Business",
+  2: "IT & Development",
+  3: "Marketing",
+  4: "Design",
+  5: "Finance and Accounting",
+  6: "Office productivity"
+};
+
+
 export const CardsData = [
   {
     imageurl:
@@ -9,6 +17,7 @@ export const CardsData = [
     name: "Prof James ",
     price: 3000,
     rating: 4.5,
+    category: categories[2],
   },
   {
     imageurl:
@@ -17,6 +26,7 @@ export const CardsData = [
     name: "Mickey wanda",
     price: 110000,
     rating: 3.5,
+    category: categories[2],
   },
   {
     imageurl:
@@ -25,6 +35,7 @@ export const CardsData = [
     name: "john kibe wangarii",
     price: 20000,
     rating: 3.8,
+    category: categories[5],
   },
   {
     imageurl:
@@ -34,6 +45,7 @@ export const CardsData = [
     name: "Jack mahn",
     price: 110000,
     rating: 4.2,
+    category: categories[2],
   },
 
   {
@@ -44,6 +56,7 @@ export const CardsData = [
     name: "Jack mahn",
     price: 110000,
     rating: 3.3,
+    category: categories[2],
   },
 
 
@@ -54,6 +67,7 @@ export const CardsData = [
     name: "Prof James ",
     price: 3000,
     rating: 4.3,
+    category: categories[2],
   },
   {
     imageurl:
@@ -62,15 +76,16 @@ export const CardsData = [
     name: "Mickey wanda",
     price: 110000,
     rating: 4.7,
+    category: categories[2],
   },
   {
     imageurl:
       "https://res.cloudinary.com/pitz/image/upload/v1704120679/WhatsApp_Image_2024-01-01_at_17.49.03_1_duh6sx.jpg",
-
     title: "Introduction to game localization",
     name: "Jack mahn",
     price: 110000,
     rating: 4.0,
+    category: categories[2],    
   },
   
 
@@ -82,6 +97,7 @@ export const CardsData = [
     name: "osten ilic",
     price: 110000,
     rating: 3.9,
+    category: categories[2],
   },
 
 ];
@@ -94,6 +110,7 @@ export const Topcourses = [
     name: "Prof James ",
     price: 3000,
     rating: 4.5,
+     category: categories[2],
   },
   {
     imageurl:
@@ -102,6 +119,7 @@ export const Topcourses = [
     name: "Mickey wanda",
     price: 110000,
     rating: 3.5,
+    category: categories[2],
   },
   {
     imageurl:
@@ -110,6 +128,7 @@ export const Topcourses = [
     name: "john kibe wangarii",
     price: 20000,
     rating: 3.8,
+    category: categories[5],
   },
   {
     imageurl:
@@ -119,6 +138,7 @@ export const Topcourses = [
     name: "Jack mahn",
     price: 110000,
     rating: 4.2,
+    category: categories[2],
   },
 
   {
@@ -129,6 +149,7 @@ export const Topcourses = [
     name: "Jack mahn",
     price: 110000,
     rating: 3.3,
+    category: categories[2],
   },
 
 
@@ -139,6 +160,7 @@ export const Topcourses = [
     name: "Prof James ",
     price: 3000,
     rating: 4.3,
+    category: categories[2],
   },
   {
     imageurl:
@@ -147,6 +169,7 @@ export const Topcourses = [
     name: "Mickey wanda",
     price: 110000,
     rating: 4.7,
+    category: categories[2],
   },
   {
     imageurl:
@@ -156,6 +179,7 @@ export const Topcourses = [
     name: "Jack mahn",
     price: 110000,
     rating: 4.0,
+    category: categories[2],
   },
   
 
@@ -167,6 +191,7 @@ export const Topcourses = [
     name: "osten ilic",
     price: 110000,
     rating: 3.9,
+    category: categories[2],
   },
 
 ]
