@@ -8,6 +8,7 @@ export const CardsData = [
     title: "Web Development",
     name: "Prof James ",
     price: 3000,
+    rating: 4.5,
   },
   {
     imageurl:
@@ -15,6 +16,7 @@ export const CardsData = [
     title: "Certified Pentester course",
     name: "Mickey wanda",
     price: 110000,
+    rating: 3.5,
   },
   {
     imageurl:
@@ -22,6 +24,7 @@ export const CardsData = [
     title: "PMP Certification exam course 35",
     name: "john kibe wangarii",
     price: 20000,
+    rating: 3.8,
   },
   {
     imageurl:
@@ -30,6 +33,7 @@ export const CardsData = [
     title: "Introduction to game localization",
     name: "Jack mahn",
     price: 110000,
+    rating: 4.2,
   },
 
   {
@@ -39,23 +43,17 @@ export const CardsData = [
     title: "Introduction to game localization",
     name: "Jack mahn",
     price: 110000,
+    rating: 3.3,
   },
-  
 
-  {
-    imageurl:
-     "https://res.cloudinary.com/pitz/image/upload/v1704362016/data-science-training-gurgaon_xoyl8o.jpg",
 
-    title: "Datascience on the Go",
-    name: "osten ilic",
-    price: 110000,
-  },
   {
     imageurl:
       "https://res.cloudinary.com/pitz/image/upload/v1704120679/WhatsApp_Image_2024-01-01_at_17.49.02_2_wox4kc.jpg",
     title: "Web Development",
     name: "Prof James ",
     price: 3000,
+    rating: 4.3,
   },
   {
     imageurl:
@@ -63,8 +61,8 @@ export const CardsData = [
     title: "Certified Pentester course",
     name: "Mickey wanda",
     price: 110000,
+    rating: 4.7,
   },
-  
   {
     imageurl:
       "https://res.cloudinary.com/pitz/image/upload/v1704120679/WhatsApp_Image_2024-01-01_at_17.49.03_1_duh6sx.jpg",
@@ -72,6 +70,7 @@ export const CardsData = [
     title: "Introduction to game localization",
     name: "Jack mahn",
     price: 110000,
+    rating: 4.0,
   },
   
 
@@ -82,9 +81,8 @@ export const CardsData = [
     title: "Datascience on the Go",
     name: "osten ilic",
     price: 110000,
+    rating: 3.9,
   },
-
-
 
 ];
 
@@ -95,6 +93,7 @@ export const Topcourses = [
     title: "Web Development",
     name: "Prof James ",
     price: 3000,
+    rating: 4.5,
   },
   {
     imageurl:
@@ -102,6 +101,7 @@ export const Topcourses = [
     title: "Certified Pentester course",
     name: "Mickey wanda",
     price: 110000,
+    rating: 3.5,
   },
   {
     imageurl:
@@ -109,6 +109,7 @@ export const Topcourses = [
     title: "PMP Certification exam course 35",
     name: "john kibe wangarii",
     price: 20000,
+    rating: 3.8,
   },
   {
     imageurl:
@@ -117,6 +118,7 @@ export const Topcourses = [
     title: "Introduction to game localization",
     name: "Jack mahn",
     price: 110000,
+    rating: 4.2,
   },
 
   {
@@ -126,6 +128,7 @@ export const Topcourses = [
     title: "Introduction to game localization",
     name: "Jack mahn",
     price: 110000,
+    rating: 3.3,
   },
 
 
@@ -135,6 +138,7 @@ export const Topcourses = [
     title: "Web Development",
     name: "Prof James ",
     price: 3000,
+    rating: 4.3,
   },
   {
     imageurl:
@@ -142,6 +146,7 @@ export const Topcourses = [
     title: "Certified Pentester course",
     name: "Mickey wanda",
     price: 110000,
+    rating: 4.7,
   },
   {
     imageurl:
@@ -150,6 +155,7 @@ export const Topcourses = [
     title: "Introduction to game localization",
     name: "Jack mahn",
     price: 110000,
+    rating: 4.0,
   },
   
 
@@ -160,6 +166,7 @@ export const Topcourses = [
     title: "Datascience on the Go",
     name: "osten ilic",
     price: 110000,
+    rating: 3.9,
   },
 
 ]

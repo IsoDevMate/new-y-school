@@ -129,7 +129,6 @@ export const Cards = (props) => {
         <Typography gutterBottom variant="h5" component="div" noWrap={false}>
          {loading ? <Skeleton variant="text" /> : title}
          </Typography>
-
         </CardContent>
         <CardActions style={{ flexDirection: 'column' }}>
          {loading ? <Skeleton variant="text" width="2rem" height="30px"/> : <Button size="small">{name}</Button>}
