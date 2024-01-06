@@ -1,0 +1,48 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+  }
+  
+  .title:hover {
+    overflow: visible;
+    width: auto;
+  }
+  
+  .link {
+    color: black;
+  }
+  
+  .button {
+    background-color: black;
+    color: white;
+  }
+
+  .linkname{
+    color:rgb(39, 213, 92); 
+  }
+
+
+    .linkname:active{
+        color: rgb(111, 71, 159);
+    }
+
+.cards{
+    min-width: 320px !important;
+    background-color: white !important;
+    min-height: 146px;
+    max-height: 146px;
+    margin-top: 2em important;
+    margin-bottom: 2em important;
+    border-radius: 1rem !important;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+
+    

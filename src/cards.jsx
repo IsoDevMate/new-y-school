@@ -38,13 +38,13 @@ const CardContainer = styled(motion.div)`
   padding-bottom: 10px important!;
   transition: 0.5s ease;
   border-radius: 20px;
-  margin-top: 2em;
+  margin-top: 2em;copilot
   margin-bottom: 2em;
   min-height: 15rem;
 
   &:hover {
     transform: scale(1.03);
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
 
@@ -129,7 +129,6 @@ export const Cards = (props) => {
         <Typography gutterBottom variant="h5" component="div" noWrap={false}>
          {loading ? <Skeleton variant="text" /> : title}
          </Typography>
-
         </CardContent>
         <CardActions style={{ flexDirection: 'column' }}>
          {loading ? <Skeleton variant="text" width="2rem" height="30px"/> : <Button size="small">{name}</Button>}
