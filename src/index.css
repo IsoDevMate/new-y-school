@@ -52,9 +52,6 @@
  .search {
   display: none !important;
  }
- .box{
-  display: none !important;
- }
  .nav-items{
   display: none !important;
  }
@@ -99,15 +96,20 @@
   height: 17rem !important;
 }
 .category {
-  /* margin-left: 5rem !important; */
-  margin: 1rem;
-  /* padding-left: 15rem; */
-  scroll-snap-align: start;
-  /* background-color:  #3b3763 !important; */
-height: 2rem;
-/* width: 11rem; */
-color: black !important;
-  /* Add other styling for your category items */
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  justify-content: flex-start; 
+  color: black !important;
+  width: 100%;
+  gap: 2rem;
+  padding-left: 1rem;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+
+  &::-webkit-scrollbar {
+    display: none; 
+  }
 }
 
 .course{
@@ -119,11 +121,30 @@ color: black !important;
   gap: 2rem;
 }
 
-.card{
-  min-width: 270x ;
-  background-color: white !important;
-  height: 300px;
+.btn{
+  border: none !important;
+  height: 2rem;
+  /* padding: 1rem; */
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1.3rem;
+  border-radius: 4px;
+
 }
-.box{
-  display: flex;
+.op{
+  background-color: red !important;
+}
+#demo{
+  border: none !important;
+  /* background-color: #000 !important; */
+}
+.btn:hover{
+/* color: blueviolet; */
+}
+
+.btn.active {
+  background-color: rgb(233, 14, 43);
+  color: aliceblue;
+  /* Add any other styles for the active button here */
 }

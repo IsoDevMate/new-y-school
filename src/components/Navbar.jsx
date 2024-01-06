@@ -14,13 +14,13 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { InputBase, Paper } from "@mui/material";
+import { InputBase } from "@mui/material";
 import { styled, alpha } from "@mui/material/styles";
 import SearchIcon from "@mui/icons-material/Search";
 import { CiHeart } from "react-icons/ci";
 import { FaShoppingBag } from "react-icons/fa";
 import { IoIosNotificationsOutline } from "react-icons/io";
-import { ArrowBack, LoginOutlined, PlusOneSharp } from "@mui/icons-material";
+import { ArrowBack, LoginOutlined } from "@mui/icons-material";
 import { auth } from "../../firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
@@ -276,7 +276,6 @@ export default function DrawerAppBar(props) {
                <StyledInputBase
                  placeholder="Search…"
                  inputProps={{ "aria-label": "search" }}
-         
                />
              </Search>
            </Box>
@@ -307,7 +306,7 @@ export default function DrawerAppBar(props) {
 
           <Box style={{ display: "flex" }}>
             {navItems.map((item) => (
-              <Button className="nav-items" key={item} sx={{ color: "black" }}>
+              <Button className="nav-items" key={item} sx={{ color: "black",marginRight:'2rem' }}>
                 {item}
                 {/* <CiHeart style={{marginTop:'1rem'}} size={34}/> */}
               </Button>
@@ -364,7 +363,10 @@ export default function DrawerAppBar(props) {
                     />
                   </ListItemButton>
                 ) : (
-                  <ListItemButton
+                 <>
+                 {width>=700 &&(
+                  <>
+                   <ListItemButton
                     sx={{
                       minHeight: 48,
                       justifyContent: open ? "initial" : "center",
@@ -382,6 +384,10 @@ export default function DrawerAppBar(props) {
                       />
                     </Link>
                   </ListItemButton>
+                  </>
+                 )}
+                 
+                 </>
                 )}
               </Menu>
             </Box>
