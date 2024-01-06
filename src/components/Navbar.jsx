@@ -14,7 +14,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { InputBase } from "@mui/material";
+import { InputBase, Paper } from "@mui/material";
 import { styled, alpha } from "@mui/material/styles";
 import SearchIcon from "@mui/icons-material/Search";
 import { CiHeart } from "react-icons/ci";
@@ -29,6 +29,7 @@ import Avatar from "@mui/material/Avatar";
 import { signOut } from "firebase/auth";
 import { ListItemIcon } from "@mui/material";
 import { RxCross1 } from "react-icons/rx";
+
 
 const drawerWidth = 240;
 const navItems = ["Y-business", "Y-courses"];
@@ -59,6 +60,8 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
   justifyContent: "center",
 }));
 
+
+
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
   "& .MuiInputBase-input": {
@@ -78,6 +81,7 @@ export default function DrawerAppBar(props) {
 
   const navigate = useNavigate();
 // const [search, setSearch] = React.useState(false);
+
 
   const [menu, setMenu] = React.useState(false);
 
@@ -197,6 +201,7 @@ export default function DrawerAppBar(props) {
       </List>
     </Box>
   );
+
   const handleLogout = (e) => {
     e.preventDefault();
     // if (window.confirm("Are you sure you want to log out?")) {
@@ -221,6 +226,7 @@ export default function DrawerAppBar(props) {
   const handleClose = () => {
     setAnchorEl(null);
   };
+ 
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -270,6 +276,7 @@ export default function DrawerAppBar(props) {
                <StyledInputBase
                  placeholder="Search…"
                  inputProps={{ "aria-label": "search" }}
+         
                />
              </Search>
            </Box>
@@ -281,6 +288,7 @@ export default function DrawerAppBar(props) {
                 alignItems: "center",
               }}
             >
+              
               <Search className="search">
                 <SearchIconWrapper>
                   <SearchIcon />
@@ -288,8 +296,12 @@ export default function DrawerAppBar(props) {
                 <StyledInputBase
                   placeholder="Search…"
                   inputProps={{ "aria-label": "search" }}
+            
                 />
+            
+
               </Search>
+           
             </Box>
           )}
 
@@ -389,9 +401,11 @@ export default function DrawerAppBar(props) {
                 <StyledInputBase
                   placeholder="Search…"
                   inputProps={{ "aria-label": "search" }}
+               
                 />
               </Search>
             </Box>
+            
             )}
            
             {width <= 700 && (
