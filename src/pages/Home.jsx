@@ -4,13 +4,15 @@ import { Cards, Cards1 } from '../cards'
 import MainCards from './MainCards'
 import Categories from './Categories'
 import HomeCards from './HomeCards'
+import Searchicon from './searchdisplay'
 
 const Home = () => {
   return (
     <div>
-      <Categories/>
-       <HomeCards  />
-     {/* <MainCards/> */}
+      <Categories/>    
+     <HomeCards  /> 
+     {/* <MainCards/>*/}
+    {/*<Searchicon/>}*/}
     </div>
   )
 }

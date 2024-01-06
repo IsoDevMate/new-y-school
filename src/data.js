@@ -186,7 +186,7 @@ export const Topcourses = [
   {
     imageurl:
      "https://res.cloudinary.com/pitz/image/upload/v1704362016/data-science-training-gurgaon_xoyl8o.jpg",
-
+    
     title: "Datascience on the Go",
     name: "osten ilic",
     price: 110000,

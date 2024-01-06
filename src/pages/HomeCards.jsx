@@ -1,17 +1,11 @@
 /* eslint-disable no-unused-vars */
 
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import { CardsData, Topcourses } from "../data";
-import Skeleton from "@mui/material/Skeleton";
+
+
 import React from "react";
 import { useState,useEffect } from "react";
 import { motion } from "framer-motion";
-import {Link} from "react-router-dom";
+
 import styled from "styled-components";
 import media from "../breakpoints";
 import GalleryVertical from "../card";

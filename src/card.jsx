@@ -57,11 +57,12 @@ export default function GalleryVertical() {
               </SfLink>
             </div>
             <div className="p-2 border-t border-neutral-200 typography-text-sm">
-              <SfLink href="#" className="block link">
+  
+              <SfLink href="#" className="block link" style={{ textDecoration: 'none' }}>
                 {title}
               </SfLink>
               <span className="block mt-2 font-bold">${price}</span>
-              <SfLink href="#" className="block linkname">
+              <SfLink href="#" className="block linkname"style={{ textDecoration: 'none' }}>
                 {name}
               </SfLink>
             </div>
