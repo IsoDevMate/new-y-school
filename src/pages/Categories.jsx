@@ -63,7 +63,7 @@ const Categories = () => {
        <div>
 
         {/* <MyStyledSelector/> */}
-        <FormControl  variant="standard" sx={{ m: 1, minWidth: 120, borderBottom: 'none' }}>
+        <FormControl variant="standard" sx={{ m: 1, minWidth: 120, borderBottom: 'none', color: 'white' }}>
       <InputLabel id="demo-simple-select-standard-label" sx={{ borderBottom: 'none' }}>
         Categories
       </InputLabel>
