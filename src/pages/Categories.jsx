@@ -18,21 +18,30 @@ const CategoriesDiv = styled.div`
   justify-content: flex-start; 
   color: black !important;
   width: 100%;
-  padding-top:2rem;
-  padding-bottom:2rem;
-  
+  padding-top: 2rem;
+  // padding-bottom: 2rem;
   gap: 2rem;
   padding-left: 1rem;
   -ms-overflow-style: none;  
   scrollbar-width: none;  
+
   &::-webkit-scrollbar {
-    display: none; 
+    height: 12px !important;
+    background-color:white;
+    // Adjust the size as needed
   }
 
-  @media (min-width: 600px) {
-    
+  overflow: -moz-scrollbars-none;
+
+  @media (max-width: 600px) {
+    &::-webkit-scrollbar {
+      display: none; 
+    }
   }
 `;
+
+
+
 
 
 const CategoryButton = styled(Button)`
@@ -63,8 +72,8 @@ const Categories = () => {
        <div>
 
         {/* <MyStyledSelector/> */}
-        <FormControl variant="standard" sx={{ m: 1, minWidth: 120, borderBottom: 'none', color: 'white' }}>
-      <InputLabel id="demo-simple-select-standard-label" sx={{ borderBottom: 'none' }}>
+        <FormControl variant="standard" sx={{ m: 1, minWidth: 120,backgroundColor:'white', borderBottom: 'none', color: 'white' }}>
+      <InputLabel id="demo-simple-select-standard-label" sx={{ borderBottom: 'none', }}>
         Categories
       </InputLabel>
       <Select
