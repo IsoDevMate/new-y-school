@@ -282,7 +282,7 @@ export default function DrawerAppBar(props) {
 
           <Box style={{ display: "flex" }}>
             {navItems.map((item) => (
-              <Button className="nav-items" key={item} sx={{ color: "black" }}>
+              <Button className="nav-items" key={item} sx={{ color: "black",marginRight:'2rem' }}>
                 {item}
                 {/* <CiHeart style={{marginTop:'1rem'}} size={34}/> */}
               </Button>

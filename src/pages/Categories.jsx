@@ -27,6 +27,7 @@ const CategoriesDiv = styled.div`
 const CategoryButton = styled(Button)`
   margin: 10px 0; /* Increased margin to provide more space */
   color: black !important;
+  width:'14rem' !important;
   margin-left: 1rem;
   padding: 8px 16px; /* Increased padding for better spacing */
 `;
@@ -34,22 +35,25 @@ const CategoryButton = styled(Button)`
 const Categories = () => {
   return (
     <CategoriesDiv>
-      <CategoryButton>Categories</CategoryButton>
-      <CategoryButton>Business</CategoryButton>
+      <button className='btn'>Categories</button>
+      <button className='btn'>Business</button>
       <div style={{marginLeft:'1rem'}}></div>
-      <CategoryButton>IT & Development</CategoryButton>
-      <div style={{marginLeft:'1rem'}}></div>
-
-      <CategoryButton>Marketing</CategoryButton>
+      <button className='btn'>IT & Development</button>
       <div style={{marginLeft:'1rem'}}></div>
 
-      <CategoryButton>Design</CategoryButton>
+      <button className='btn'>Marketing</button>
       <div style={{marginLeft:'1rem'}}></div>
 
-      <CategoryButton>Finance and Accounting</CategoryButton>
+      <button className='btn'>Design</button>
+      <div style={{marginLeft:'1rem'}}></div>
+
+      <button className='btn'>Finance and Accounting</button>
       <div style={{marginLeft:'5rem'}}></div>
 
-      <CategoryButton>Office productivity</CategoryButton>
+      <button className='btn'>Office productivity</button>
+      <div style={{marginLeft:'5rem'}}></div>
+
+      <button className='btn'>Office productivity</button>
       <div style={{marginLeft:'1rem'}}></div>
 
     </CategoriesDiv>
