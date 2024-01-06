@@ -120,3 +120,31 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
+
+.btn{
+  border: none !important;
+  height: 2rem;
+  /* padding: 1rem; */
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1.3rem;
+  border-radius: 4px;
+
+}
+.op{
+  background-color: red !important;
+}
+#demo{
+  border: none !important;
+  /* background-color: #000 !important; */
+}
+.btn:hover{
+/* color: blueviolet; */
+}
+
+.btn.active {
+  background-color: rgb(233, 14, 43);
+  color: aliceblue;
+  /* Add any other styles for the active button here */
+}
