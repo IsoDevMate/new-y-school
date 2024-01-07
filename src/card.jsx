@@ -45,7 +45,7 @@ export default function GalleryVertical() {
             className="first:ms-auto  last:me-auto ring-1 ring-inset ring-neutral-200 shrink-0 rounded-md hover:shadow-lg  w-[148px] lg:w-[192px]"
             animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.2, type: 'spring', bounce: 0.25 }, y: 0 }}
             initial={{ opacity: 0, y: 100 }}
-            whileHover={{ scale: 1.01 }}
+            whileHover={{ scale: 1.04 }}
           >
             <div className="relative top-0 md:max-w-2xl">
               <SfLink href="#" className="block">
