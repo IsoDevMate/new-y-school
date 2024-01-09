@@ -258,7 +258,7 @@ export default function DrawerAppBar(props) {
             />{" "}
             {menu && width<=700?(
 ''
-            ):            <p className="n-p" style={{ marginBottom: "" }}>Y-shule</p>
+            ):            <p className="n-p" style={{ marginBottom: "" }}>somo</p>
           }
           </Typography>
           { menu==true ? (

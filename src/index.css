@@ -132,6 +132,22 @@
   border-radius: 4px;
 
 }
+.select-btn{
+  background-color: rgb(17, 17, 37) !important;
+  padding: 0.7rem;
+  color: aliceblue;
+  margin-top: 1rem;
+  border-radius: 3px;
+}
+
+
+/* .select-btn1{
+  background-color: white !important;
+}
+.select-btn1:hover{
+  background-color: white !important;
+} */
+
 .op{
   background-color: red !important;
 }
