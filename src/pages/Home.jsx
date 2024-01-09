@@ -5,14 +5,17 @@ import MainCards from './MainCards'
 import Categories from './Categories'
 import HomeCards from './HomeCards'
 import Searchicon from './searchdisplay'
+import AdminUpload from '../admin/adminupload'
 
 const Home = () => {
   return (
     <div>
-      <Categories/>    
-     <HomeCards  /> 
-     {/* <MainCards/>*/}
-    {/*<Searchicon/>}*/}
+     <Categories/>
+       <HomeCards  />
+     {/*<MainCards/>*/}
+     {/*<Searchicon/>*/}
+       {/*<AdminUpload/> */}
+
     </div>
   )
 }

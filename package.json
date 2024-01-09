@@ -11,8 +11,12 @@
     "watch:tailwind": "tailwindcss -i ./src/styles/tailwind.css   --watch"
   },
   "dependencies": {
+    "@cloudinary/react": "^1.11.2",
+    "@cloudinary/url-gen": "^1.14.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@headlessui/react": "^1.7.8",
+    "@heroicons/react": "^2.0.14",
     "@mui/icons-material": "^5.15.2",
     "@mui/material": "^5.15.2",
     "@storefront-ui/react": "^2.6.0",
@@ -27,6 +31,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.2",
     "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
     "react-icons": "^4.12.0",
     "react-loading-skeleton": "^3.3.1",
     "react-multi-carousel": "^2.8.4",

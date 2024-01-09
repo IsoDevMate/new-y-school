@@ -10,7 +10,16 @@ const categories = {
 
 
 export const CardsData = [
- {
+  {
+    imageurl:
+      "https://res.cloudinary.com/pitz/image/upload/v1704120679/WhatsApp_Image_2024-01-01_at_17.49.02_2_wox4kc.jpg",
+    title: "Web Development",
+    name: "Prof James ",
+    price: 3000,
+    rating: 4.5,
+    category: categories[2],
+  },
+  {
     imageurl:
       "https://res.cloudinary.com/pitz/image/upload/v1704362017/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGcmVkc3F1aWQuY28udWslMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjMlMk...cm9tb3RlLUN5YmVyLVNlY3VyaXR5LUF3YXJlbmVzcy0xLmpwZyZjYWNoZU1hcmtlcj0xNjgwMDk1MjExLTM2NzA0MCZ0b2tlbj00YTY1MjM2ODNlODZiZDA3.q_umyola.jpg",
     title: "Certified Pentester course",
@@ -39,7 +48,6 @@ export const CardsData = [
     rating: 4.2,
     category: categories[2],
   },
-
   {
     imageurl:
       "https://res.cloudinary.com/pitz/image/upload/v1704120679/WhatsApp_Image_2024-01-01_at_17.49.03_1_duh6sx.jpg",
@@ -53,11 +61,11 @@ export const CardsData = [
 
   {
     imageurl:
-      "https://res.cloudinary.com/pitz/image/upload/v1704362017/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGcmVkc3F1aWQuY28udWslMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjMlMk...cm9tb3RlLUN5YmVyLVNlY3VyaXR5LUF3YXJlbmVzcy0xLmpwZyZjYWNoZU1hcmtlcj0xNjgwMDk1MjExLTM2NzA0MCZ0b2tlbj00YTY1MjM2ODNlODZiZDA3.q_umyola.jpg",
-    title: "Certified Pentester course",
-    name: "Mickey wanda",
-    price: 110000,
-    rating: 3.5,
+      "https://res.cloudinary.com/pitz/image/upload/v1704120679/WhatsApp_Image_2024-01-01_at_17.49.02_2_wox4kc.jpg",
+    title: "Web Development",
+    name: "Prof James ",
+    price: 3000,
+    rating: 4.3,
     category: categories[2],
   }, 
   
