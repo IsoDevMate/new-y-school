@@ -1,16 +1,18 @@
 import React from 'react'
-//import Image from 'next/image'
 import { useCallback, useEffect, useState } from 'react'
 import { useDropzone } from 'react-dropzone'
 import { ArrowUpTrayIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage"
-import { storage } from "../../firebase"
+
+
+
 
 const adminupload = ({ className }) => {
   const [files, setFiles] = useState([])
   const [rejected, setRejected] = useState([])
   const [percent, setPercent] = useState(0)
     const [url, setUrl] = useState(null)
+const [msg, setMsg] = useState(null)
 
   //avoid repeated rerendering on componnet call 
   const onDrop = useCallback((acceptedFiles, rejectedFiles) => {

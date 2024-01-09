@@ -12,7 +12,7 @@ const categories = {
 export const CardsData = [
   {
     imageurl:
-      "https://res.cloudinary.com/pitz/image/upload/v1704120679/WhatsApp_Image_2024-01-01_at_17.49.02_2_wox4kc.jpg",
+      "https://res.cloudinary.com/dbix3tf2z/image/upload/v1704764257/ReactJS-logo_bzbt0r.png",
     title: "Web Development",
     name: "Prof James ",
     price: 3000,
@@ -47,7 +47,6 @@ export const CardsData = [
     rating: 4.2,
     category: categories[2],
   },
-
   {
     imageurl:
       "https://res.cloudinary.com/pitz/image/upload/v1704120679/WhatsApp_Image_2024-01-01_at_17.49.03_1_duh6sx.jpg",
@@ -62,7 +61,7 @@ export const CardsData = [
 
   {
     imageurl:
-      "https://res.cloudinary.com/pitz/image/upload/v1704120679/WhatsApp_Image_2024-01-01_at_17.49.02_2_wox4kc.jpg",
+      "https://res.cloudinary.com/dbix3tf2z/image/upload/v1704764257/ReactJS-logo_bzbt0r.png",
     title: "Web Development",
     name: "Prof James ",
     price: 3000,

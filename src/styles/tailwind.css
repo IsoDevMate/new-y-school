@@ -17,6 +17,15 @@
   .link {
     color: black;
   }
+
+  .link:hover{
+    color: rgb(255, 153, 0); 
+}
+
+.linkname:hover{
+    color: black;
+}
+
   
   .button {
     background-color: black;
@@ -24,8 +33,10 @@
   }
 
   .linkname{
-    color:rgb(39, 213, 92); 
+    color:rgb(213, 111, 39); 
+
   }
+
 
 
     .linkname:active{
