@@ -182,7 +182,7 @@ export default function DrawerAppBar(props) {
             src="https://app.yafreeka.com/splash/img/light-1x.png"
             alt=""
           />{" "}
-          <h4>Y-Shule</h4>
+          <h4>Somo</h4>
         </Typography>
         <ArrowBack
           style={{ fontSize: "2rem", cursor: "pointer", marginLeft: "2rem" }}

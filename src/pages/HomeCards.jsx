@@ -44,7 +44,7 @@ export default function MediaCard() {
   }, []);
 
   return (
-    <dir style={{ dispalay: "flex", flexDirection: "colum", width: "100%" }}>
+    <dir style={{ dispalay: "flex", flexDirection: "colum", width: "100%" ,paddingLeft:'1rem'}}>
       <h4
         style={{
           padding: "1rem",

@@ -142,7 +142,13 @@
 .btn:hover{
 /* color: blueviolet; */
 }
-
+.img{
+  max-height: 10rem !important;
+}
+.card-x{
+  max-height: 20rem !important;
+  /* background-color: aqua !important; */
+}
 .btn.active {
   background-color: rgb(233, 14, 43);
   color: aliceblue;

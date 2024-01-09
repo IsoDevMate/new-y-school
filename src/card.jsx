@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React from 'react';
 import { SfLink, SfScrollable } from '@storefront-ui/react';
 import { Skeleton } from '@mui/material';
@@ -41,6 +42,7 @@ export default function GalleryVertical() {
       ) : (
         CardsData.map(({ imageurl, title, name, price }) => (
           <CardContainer
+         
             key={title}
             className="first:ms-auto  last:me-auto ring-1 ring-inset ring-neutral-200 shrink-0 rounded-md hover:shadow-lg  w-[148px] lg:w-[192px]"
             animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.2, type: 'spring', bounce: 0.25 }, y: 0 }}
@@ -52,7 +54,7 @@ export default function GalleryVertical() {
                 <img
                   src={imageurl}
                   alt={title}
-                  className="block object-cover h-auto rounded-md aspect-square w-[148px] h-[148px] lg:w-[190px] lg:h-[190px]"
+                  className="block object-cover h-auto  rounded-md aspect-square w-[148px] h-[148px] lg:w-[190px] lg:h-[190px]"
                 />
               </SfLink>
             </div>
@@ -61,7 +63,7 @@ export default function GalleryVertical() {
               <SfLink href="#" className="block link" style={{ textDecoration: 'none' }}>
                 {title}
               </SfLink>
-              <span className="block mt-2 font-bold">${price}</span>
+              <span className="block mt-2 font-bold">Price :&nbsp; ksh{price}</span>
               <SfLink href="#" className="block linkname"style={{ textDecoration: 'none' }}>
                 {name}
               </SfLink>
