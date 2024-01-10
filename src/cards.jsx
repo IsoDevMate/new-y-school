@@ -20,7 +20,7 @@ import  media  from './breakpoints'
 
 const theme = createTheme({
   typography: {
-    fontFamily: 'Roboto, sans-serif',
+    fontFamily: 'Roboto, sans-serif', 
   },
 });
 
@@ -46,6 +46,7 @@ const CardContainer = styled(motion.div)`
     transform: scale(1.03);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+
 
   gap: 2em;
     ${media.sm`
@@ -130,7 +131,7 @@ export const Cards = (props) => {
          </Typography>
         </CardContent>
         <CardActions style={{ flexDirection: 'column' }}>
-         {loading ? <Skeleton variant="text" width="2rem" height="30px"/> : <Button size="small">{name}</Button>}
+         {loading ? <Skeleton variant="text" width="2rem" height="30px"/> : <Button size="small">{name}hhhh</Button>}
           {loading ? <Skeleton variant="text" width="2rem" height="30px"/> : <Button size="small">{price}</Button>}
          </CardActions>
       </Card>

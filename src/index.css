@@ -58,6 +58,8 @@
  .card{
   min-width: 320px !important;
   background-color: white !important;
+}.t-card{
+  width: 90% !important;
 }
 }
 
@@ -131,6 +133,15 @@
   margin-top: 1.3rem;
   border-radius: 4px;
 
+}
+.t-card{
+  width: 16.5rem ;
+}
+.t-img{
+  width: 100% !important;
+}
+.linkname{
+  color: #000 !important;
 }
 .select-btn{
   background-color: rgb(17, 17, 37) !important;

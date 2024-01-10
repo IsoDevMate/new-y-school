@@ -44,7 +44,7 @@ export default function GalleryVertical() {
         CardsData.map(({ imageurl, title, name, price,links }) => (
           <CardContainer
           key={title}
-          className="first:ms-auto  last:me-auto ring-1 ring-inset ring-neutral-200 shrink-0 rounded-md hover:shadow-lg  hover:text-black transition-colors w-[250px] lg:w-[192px] h-[400px]"
+          className="t-card first:ms-auto  last:me-auto ring-1 ring-inset ring-neutral-200 shrink-0 rounded-md hover:shadow-lg  hover:text-black transition-colors"
           animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.2, type: 'spring', bounce: 0.25 }, y: 0 }}
           initial={{ opacity: 0, y: 100 }}
           whileHover={{ scale: 1.04 }}
@@ -54,7 +54,7 @@ export default function GalleryVertical() {
               <img
                 src={imageurl}
                 alt={title}
-                className="block object-cover h-1/4 rounded-md aspect-square w-[250px] lg:w-[190px] lg:h-[190px]"
+                className="block t-img object-cover h-1/4 rounded-md aspect-square w-[250px] lg:w-[190px] lg:h-[190px]"
               />
             </a>
           </div>
