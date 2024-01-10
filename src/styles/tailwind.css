@@ -33,15 +33,24 @@
   }
 
   .linkname{
-    color:rgb(213, 111, 39); 
-
+    color:rgb(240, 71, 37); 
   }
-
-
 
     .linkname:active{
         color: rgb(111, 71, 159);
     }
+
+    .instructor-name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .instructor-name:hover {
+      overflow: hidden;
+      white-space: no-wrap;
+    }
+    
 
 .cards{
     min-width: 320px !important;
@@ -56,4 +65,3 @@
 }
 
 
-    

@@ -18,6 +18,7 @@ export const CardsData = [
     price: 3000,
     rating: 4.5,
     category: categories[2],
+    links:"https://www.udemy.com/course/the-complete-web-development-bootcamp/"
   },
   {
     imageurl:
@@ -27,6 +28,7 @@ export const CardsData = [
     price: 110000,
     rating: 3.5,
     category: categories[2],
+    links:"https://www.udemy.com/course/pentestplus/"
   }, 
   
   {
@@ -37,6 +39,8 @@ export const CardsData = [
     price: 20000,
     rating: 3.8,
     category: categories[5],
+    links:"https://www.udemy.com/course/pmp-pmbok6-35-pdus/"
+    
   },
   {
     imageurl:
@@ -47,6 +51,7 @@ export const CardsData = [
     price: 110000,
     rating: 4.2,
     category: categories[2],
+    links:"https://www.udemy.com/course/unitycourse/"
   },
   {
     imageurl:
@@ -57,6 +62,7 @@ export const CardsData = [
     price: 110000,
     rating: 3.3,
     category: categories[2],
+    links:"https://www.udemy.com/course/unitycourse/"
   },
 
   {
@@ -67,6 +73,7 @@ export const CardsData = [
     price: 3000,
     rating: 4.3,
     category: categories[2],
+    links:"https://www.udemy.com/course/the-complete-web-development-bootcamp/"
   }, 
   
   {
@@ -77,6 +84,7 @@ export const CardsData = [
     price: 110000,
     rating: 4.7,
     category: categories[2],
+    links:"https://www.udemy.com/course/pentestplus/"
   },
   {
     imageurl:
@@ -85,7 +93,9 @@ export const CardsData = [
     name: "Jack mahn",
     price: 110000,
     rating: 4.0,
-    category: categories[2],    
+    category: categories[2],   
+    links:"https://www.udemy.com/course/unitycourse/"
+     
   },
   
 
@@ -98,6 +108,7 @@ export const CardsData = [
     price: 110000,
     rating: 3.9,
     category: categories[2],
+    links:"https://www.udemy.com/course/data-science-machine-learning-and-deep-learning-with-python/"
   },
 
 ];
