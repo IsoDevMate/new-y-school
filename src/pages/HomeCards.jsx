@@ -47,7 +47,7 @@ export default function MediaCard() {
     <div style={{ display: "flex", flexDirection: "column", width: "100%", paddingLeft: '1rem' }}>
       <h4
         style={{
-          padding: "1rem",
+        //  padding: "1rem",
          // paddingLeft: "3rem",
           marginBottom: "1rem",
           fontWeight: "bold",
@@ -58,7 +58,7 @@ export default function MediaCard() {
       <GalleryVertical />
       <h4
         style={{
-          padding: "1rem",
+        //  padding: "1rem",
         //  paddingLeft: "3rem",
           marginBottom: "1rem",
           fontWeight: "bold",
