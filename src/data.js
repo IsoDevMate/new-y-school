@@ -39,7 +39,7 @@ export const CardsData = [
     price: 20000,
     rating: 3.8,
     category: categories[5],
-    links:"https://www.udemy.com/course/pmp-pmbok6-35-pdus/"
+    links:"https://www.coursera.org/degrees/bachelor-of-science-computer-science-london"
     
   },
   {
@@ -51,7 +51,7 @@ export const CardsData = [
     price: 110000,
     rating: 4.2,
     category: categories[2],
-    links:"https://www.udemy.com/course/unitycourse/"
+    links:"https://www.coursera.org/degrees/bachelor-of-science-computer-science-london"
   },
   {
     imageurl:
@@ -62,7 +62,7 @@ export const CardsData = [
     price: 110000,
     rating: 3.3,
     category: categories[2],
-    links:"https://www.udemy.com/course/unitycourse/"
+    links:"https://www.coursera.org/degrees/bachelor-of-science-computer-science-london"
   },
 
   {
@@ -73,7 +73,7 @@ export const CardsData = [
     price: 3000,
     rating: 4.3,
     category: categories[2],
-    links:"https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+    links:"https://www.coursera.org/degrees/bachelor-of-science-computer-science-london"
   }, 
   
   {
@@ -84,7 +84,7 @@ export const CardsData = [
     price: 110000,
     rating: 4.7,
     category: categories[2],
-    links:"https://www.udemy.com/course/pentestplus/"
+    links:"https://www.coursera.org/degrees/bachelor-of-science-computer-science-london"
   },
   {
     imageurl:
@@ -94,7 +94,7 @@ export const CardsData = [
     price: 110000,
     rating: 4.0,
     category: categories[2],   
-    links:"https://www.udemy.com/course/unitycourse/"
+    links:"https://www.coursera.org/degrees/bachelor-of-science-computer-science-london"
      
   },
   
@@ -108,7 +108,7 @@ export const CardsData = [
     price: 110000,
     rating: 3.9,
     category: categories[2],
-    links:"https://www.udemy.com/course/data-science-machine-learning-and-deep-learning-with-python/"
+    links:"https://www.coursera.org/degrees/bachelor-of-science-computer-science-london"
   },
 
 ];
