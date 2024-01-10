@@ -20,7 +20,7 @@ import  media  from './breakpoints'
 
 const theme = createTheme({
   typography: {
-    fontFamily: 'Roboto, sans-serif', 
+    fontFamily: 'Roboto, sans-serif',
   },
 });
 
@@ -46,7 +46,6 @@ const CardContainer = styled(motion.div)`
     transform: scale(1.03);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-
 
   gap: 2em;
     ${media.sm`

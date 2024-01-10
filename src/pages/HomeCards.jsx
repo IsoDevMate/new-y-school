@@ -51,10 +51,10 @@ export default function MediaCard() {
           paddingLeft: "3rem",
           marginBottom: "1rem",
           fontWeight: "bold",
-          border: "1px solid #ccc",
-          borderRadius: "10px",
-          boxShadow: "0 0 10px rgba(0,0,0,0.1)",
-          backgroundColor: "#f5f5f5",
+        //  border: "1px solid #ccc",
+        //  borderRadius: "10px",
+         // boxShadow: "0 0 10px rgba(0,0,0,0.1)",
+        //  backgroundColor: "#f5f5f5",
         }}
       >
         Students are viewing
@@ -66,10 +66,10 @@ export default function MediaCard() {
           paddingLeft: "3rem",
           marginBottom: "1rem",
           fontWeight: "bold",
-          border: "1px solid #ccc",
-          borderRadius: "10px",
-          boxShadow: "0 0 10px rgba(0,0,0,0.1)",
-          backgroundColor: "#f5f5f5",
+       //   border: "1px solid #ccc",
+        //  borderRadius: "10px",
+        //  boxShadow: "0 0 10px rgba(0,0,0,0.1)",
+        //  backgroundColor: "#f5f5f5",
         }}
       >
         Top courses in business
