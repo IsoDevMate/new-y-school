@@ -10,7 +10,6 @@ import Select from '@mui/material/Select';
 import * as React from 'react';
 import Form from 'react-bootstrap/Form';
 import MyStyledSelector from './Test';
-
 const CategoriesDiv = styled.div`
   display: flex;
   overflow-x: auto;
@@ -71,8 +70,19 @@ const Categories = () => {
     <CategoriesDiv>
        <div>
 
+      
+
+       <select className="select select-btn">
+  <option className='select-btn1' value="1">Categories</option>
+  <option value="2">Early Childhood education</option>
+  <option value="3">Primary</option>
+  <option value="4">Secondary</option>
+  <option value="5">Tertiary/Vocational schools</option>
+  <option value="6">University</option>
+  <option value="7">Professional certificates.</option>
+</select>
         {/* <MyStyledSelector/> */}
-        <FormControl variant="standard" sx={{ m: 1, minWidth: 120,backgroundColor:'white', borderBottom: 'none', color: 'white' }}>
+        {/* <FormControl variant="standard" sx={{ m: 1, minWidth: 120,backgroundColor:'white', borderBottom: 'none', color: 'white' }}>
       <InputLabel id="demo-simple-select-standard-label" sx={{ borderBottom: 'none', }}>
         Categories
       </InputLabel>
@@ -86,13 +96,13 @@ const Categories = () => {
       >
         <MenuItem value=""></MenuItem>
         <MenuItem value={10}>Early Childhood education</MenuItem>
-        <MenuItem value={20}>Primary</MenuItem>
-        <MenuItem value={30}>Secondary</MenuItem>
-        <MenuItem value={40}>Tertiary/Vocational schools</MenuItem>
-        <MenuItem value={50}>University</MenuItem>
-        <MenuItem value={60}>Professional certificates.</MenuItem>
+        <MenuItem value={20}></MenuItem>
+        <MenuItem value={30}></MenuItem>
+        <MenuItem value={40}></MenuItem>
+        <MenuItem value={50}></MenuItem>
+        <MenuItem value={60}></MenuItem>
       </Select>
-    </FormControl>
+    </FormControl> */}
 
    
       
